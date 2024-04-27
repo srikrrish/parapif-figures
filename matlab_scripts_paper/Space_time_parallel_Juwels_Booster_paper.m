@@ -195,6 +195,7 @@ end
 
 
         hold off;
+        set(gca,'FontSize',16);
         xlabel('No. of GPUs');
         ylabel('time (s)');
         grid on;
@@ -203,6 +204,5 @@ end
         legend([l(1) l(2) p1 p2 p3],'Space only parallel, $\Delta t_f=0.05$','Space only parallel, $\Delta t_f=0.003125$',...
                 'Space time parallel, Landau damping','Space time parallel, Two-stream instability','Space time parallel, PenningTrap','Location','northeast','FontSize',12);
         legend('boxoff');
-        set(gca,'FontSize',16);
         set (gca, 'XScale' , 'log' , 'YScale' , 'log' );
         exportgraphics(fig,['Space_time_parallel_128_cube_Pc_10_coarse_fine_dt_miniapps_combined.pdf']);

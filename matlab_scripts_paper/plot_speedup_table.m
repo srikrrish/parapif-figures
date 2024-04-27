@@ -1,23 +1,23 @@
 clear all;
 addpath('./heatmaps');
 test='PenningTrap';
-ng='128';
+ng='64';
 pc='10';
-ncycles='1';
 ntime='16';
-nspace='8';
+nspace='2';
 fine_dt='05';
-coarse_dt=[0.2 0.1 0.05];
+coarse_dt=[0.4 0.2 0.1 0.05];
 coarse_tol = {'0.001';'0.01';'0.1';'PIC'};
 ncycles = {'1';'1';'1';'1'};
 %nspace='4';
 %fine_dt='003125';
 %coarse_dt=[0.2 0.05 0.003125];
 %coarse_tol = {'0.00001';'0.0001';'0.001';'PIC'};
+%%coarse_tol_mod = {'$10^{-5}$';'$10^{-4}$';'$10^{-3}$';'PIC'};
 %ncycles = {'1';'1';'1';'1'};
 ncoarse_dt=length(coarse_dt);
 ncoarse_tol = length(coarse_tol);
-dir=['../',test,'/speedup_studies/T_192_dt_',fine_dt,'/Pc_',pc,'/',ng,'_cube','/'];
+dir=['../../',test,'/speedup_studies/T_192_dt_',fine_dt,'/Pc_',pc,'/',ng,'_cube','/'];
 
 
 parallel_timers=['mainTimer...........'];
@@ -41,13 +41,6 @@ set(0,'defaultAxesTickLabelInterpreter','latex');
 time_parallel_kernels_avg = zeros(ncoarse_dt,ncoarse_tol);
 time_parallel_kernels_min = zeros(ncoarse_dt,ncoarse_tol);
 time_parallel_kernels_max = zeros(ncoarse_dt,ncoarse_tol);
-        
-%speedup_avg = zeros(ncoarse_dt,ncoarse_tol);
-%speedup_min = zeros(ncoarse_dt,ncoarse_tol);
-%speedup_max = zeros(ncoarse_dt,ncoarse_tol);
-%eff_avg = zeros(ncoarse_dt,ncoarse_tol);
-%eff_min = zeros(ncoarse_dt,ncoarse_tol);
-%eff_max = zeros(ncoarse_dt,ncoarse_tol);
 
 for nt=1:ncoarse_dt
     for ntol=1:ncoarse_tol
@@ -78,6 +71,9 @@ for nt=1:ncoarse_dt
     end
 end
 
-heatmap(time_parallel_kernels_max,coarse_tol,coarse_dt,'%0.1f','Colormap','parula','FontSize',16,'TextColor','m','ColorBar',1);
+heatmap(time_parallel_kernels_max,coarse_tol,coarse_dt,'%0.1f','Colormap','parula','TickAngle',45,'FontSize',28,'TextColor','m','ColorBar',1);
 fig = gca;
+set(gca,'Fontsize',28);
+xlabel('Coarse propagator');
+ylabel('Coarse time step size');
 exportgraphics(fig,[test,'_speedup_heatmap_dt_',fine_dt,'_Pc_',pc,'_',ng,'_cube.pdf']);
