@@ -30,8 +30,8 @@ for t=1:length(coarse_dt)
     coarse_dt(t)
     for r=1:nranks
         for nc = 1:nCycles
-            %file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIF/coarse_tol_0.000001/coarse_dt_',num2str(coarse_dt(t)),'/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
-            file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_',num2str(coarse_dt(t)),'/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
+            file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIF/coarse_tol_0.000001/coarse_dt_',num2str(coarse_dt(t)),'/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
+            %file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_',num2str(coarse_dt(t)),'/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
             B = readmatrix(file,'NumHeaderLines',1,'Delimiter',' ');
             Rerror{r,nc} = B(:,2);
             Perror{r,nc} = B(:,3);
@@ -68,14 +68,14 @@ for t=1:length(coarse_dt)
     end
 
     %%For LandauDamping 1 itself is a good factor
-    Referrorit = ((coarse_dt(t)).^(2*(1:max_iter)))./(factorial((1:max_iter)));
-    Referrorit(:) = (maxRerror(2,t)/Referrorit(2)) .* Referrorit(:);
+    %Referrorit = ((coarse_dt(t)).^(2*(1:max_iter)))./(factorial((1:max_iter)));
+    %Referrorit(:) = (maxRerror(2,t)/Referrorit(2)) .* Referrorit(:);
 
     pt(ct) = semilogy((1:max_iter)', maxRerror(1:max_iter,t),'LineStyle','-','Marker','*','Color',color_map(t,:),'LineWidth',1.5);
     hold on;
     %semilogy((1:max_iter)', maxPerror(1:max_iter,t),'LineStyle','-','Marker','s','Color',color_map(t,:),'LineWidth',1.5);
     %hold on;
-    semilogy((1:max_iter)', Referrorit(:),'LineStyle','--','Color',color_map(t,:),'LineWidth',1.5);
+    %semilogy((1:max_iter)', Referrorit(:),'LineStyle','--','Color',color_map(t,:),'LineWidth',1.5);
     ct  = ct + 1;
 end
 set(gca,'Fontsize',16);
@@ -84,7 +84,7 @@ xlabel('Iterations');
 ylabel('Rel. error');
 legend([pt],'$\Delta t_g  = 0.4$','$\Delta t_g  = 0.2$','$\Delta t_g  = 0.1$','$\Delta t_g  = 0.05$','$\Delta t_g  = 0.025$','Location','northeast','FontSize',16);  
 legend('boxoff');
-exportgraphics(figiter,[test_str,'_MaxlocalError_Vs_Iter_',grid_str,'_',Np_str,'_all_coarse_dt_coarse_pic.pdf']);
+exportgraphics(figiter,[test_str,'_MaxlocalError_Vs_Iter_',grid_str,'_',Np_str,'_all_coarse_dt.pdf']);
 
 
 iterCons = [1 2 3 4 5];
@@ -95,7 +95,7 @@ for it=1:length(iterCons)
     hold on;
     %loglog(coarse_dt(:), maxPerror(iterCons(it),:)','LineStyle','-','Marker','s','Color',color_map(it,:),'LineWidth',1.5);
     %hold on;
-    Referror = ((coarse_dt(:)).^(2*iterCons(it)))./(factorial(iterCons(it)));
+    Referror = coarse_dt(:).^(2*iterCons(it));
     Referror(:) = (maxRerror(iterCons(it),1)/Referror(1)) .* Referror(:);
     loglog(coarse_dt(:), Referror(:),'LineStyle','--','Color',color_map(it,:),'LineWidth',1.5);
     ct = ct+1;
@@ -104,12 +104,11 @@ hold off;
 set(gca,'Fontsize',16);
 grid on;
 xlabel('Coarse time step size');
-ylabel('Rel. error');
+%ylabel('Rel. error');
 xticks([0.025 0.05 0.1 0.2 0.4]);
 set(gca,'Fontsize',16);
 legend('boxoff');
 legend([pt],'$k=1$','$k=2$','$k=3$','$k=4$','$k=5$','Location','southeast','FontSize',16);
-%legend([pt],'$k=1$','$k=2$','$k=3$','Location','southeast','FontSize',16);
-exportgraphics(figtstep,[test_str,'_MaxlocalError_Vs_coarse_dt_coarse_pic_',grid_str,'_',Np_str,'.pdf']);
+exportgraphics(figtstep,[test_str,'_MaxlocalError_Vs_coarse_dt_',grid_str,'_',Np_str,'.pdf']);
 
 

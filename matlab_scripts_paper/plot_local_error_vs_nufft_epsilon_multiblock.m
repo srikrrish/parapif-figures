@@ -66,15 +66,15 @@ for t=1:length(nufft_tol)
         maxRerror(iter,t) = max(RerrorIter{iter}(:));
     end
 
-    %%For LandauDamping 10 is a good factor
-    Referrorit = ((2*nufft_tol(t)).^((1:max_iter)))./(factorial((1:max_iter)));
-    Referrorit(:) = (maxRerror(2,t)/Referrorit(2)) .* Referrorit(:);
+    %%For LandauDamping 2 is a good factor
+    %Referrorit = ((2*nufft_tol(t)).^((1:max_iter)))./(factorial((1:max_iter)));
+    %Referrorit(:) = (maxRerror(2,t)/Referrorit(2)) .* Referrorit(:);
     
     pt(ct) = semilogy((1:max_iter)', maxRerror(1:max_iter,t),'LineStyle','-','Marker','*','Color',color_map(t,:),'LineWidth',1.5);
     hold on;
     %semilogy((1:max_iter)', maxPerror(1:max_iter,t),'LineStyle','-','Marker','s','Color',color_map(t,:),'LineWidth',1.5);
     %hold on;
-    semilogy((1:max_iter)', Referrorit(:),'LineStyle','--','Color',color_map(t,:),'LineWidth',1.5);
+    %semilogy((1:max_iter)', Referrorit(:),'LineStyle','--','Color',color_map(t,:),'LineWidth',1.5);
     ct = ct + 1;
 end
 set(gca,'Fontsize',16);
@@ -94,7 +94,7 @@ for it=1:length(iterCons)
     hold on;
     %loglog(nufft_tol(:), maxPerror(iterCons(it),:)','LineStyle','-','Marker','s','Color',color_map(it,:),'LineWidth',1.5);
     %hold on;
-    Referror = ((2*nufft_tol(:)).^(iterCons(it)))./(factorial(iterCons(it)));
+    Referror = nufft_tol(:).^iterCons(it);
     Referror(:) = (maxRerror(iterCons(it),1)/Referror(1)) .* Referror(:);
 
     loglog(nufft_tol(:), Referror(:),'LineStyle','--','Color',color_map(it,:),'LineWidth',1.5);
@@ -104,7 +104,7 @@ hold off;
 set(gca,'Fontsize',16);
 grid on;
 xlabel('NUFFT tolerance');
-ylabel('Rel. error');
+%ylabel('Rel. error');
 legend('boxoff');
 legend([pt],'$k=1$','$k=2$','$k=3$','Location','southeast','FontSize',16);
 exportgraphics(figtol,[test_str,'_MaxlocalError_Vs_epsilon_',grid_str,'_',Np_str,'.pdf']);

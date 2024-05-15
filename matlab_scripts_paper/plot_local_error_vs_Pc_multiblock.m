@@ -67,21 +67,15 @@ for p=1:length(Pc)
         maxRerror(iter,p) = max(RerrorIter{iter}(:));
     end
 
-    %factor = zeros(1,max_iter);
-    %for j=1:max_iter
-    %    factor(j) = nranks + 1 - j;
-    %end
-
     %For Landau damping 1.0 is a good factor
-    Referrorit = (1.0*Pc(p)).^(-((1:max_iter)./2))./(factorial((1:max_iter)));
-    %Referrorit = ((Pc(p).^(-((1:max_iter)./2))).*factor(1:max_iter))./(factorial((1:max_iter)));
-    Referrorit(:) = (maxRerror(4,p)/Referrorit(4)) .* Referrorit(:);
+    %Referrorit = (1.0*Pc(p)).^(-((1:max_iter)./2))./(factorial((1:max_iter)));
+    %factor_pc(p) = (maxRerror(4,p)/Referrorit(4));
 
     pt(ct) = semilogy((1:max_iter)', maxRerror(1:max_iter,p),'LineStyle','-','Marker','*','Color',color_map(p,:),'LineWidth',1.5);
     hold on;
     semilogy((1:max_iter)', maxPerror(1:max_iter,p),'LineStyle','-','Marker','s','Color',color_map(p,:),'LineWidth',1.5);
     hold on;
-    semilogy((1:max_iter)', Referrorit(:),'LineStyle','--','Color',color_map(p,:),'LineWidth',1.5);
+    %semilogy((1:max_iter)', Referrorit(:),'LineStyle','--','Color',color_map(p,:),'LineWidth',1.5);
     ct = ct + 1;
 end
 set(gca,'Fontsize',16);
@@ -101,8 +95,8 @@ for it=1:length(iterCons)
     hold on;
     loglog(Pc(:), maxPerror(iterCons(it),:)','LineStyle','-','Marker','s','Color',color_map(it,:),'LineWidth',1.5);
     hold on;
-    Referror(:) = (1.0*Pc(:)).^(-(iterCons(it)./2))./(factorial(iterCons(it)));
-    Referror(:) = (maxRerror(iterCons(it),3)/Referror(3)) .* Referror(:);
+    Referror(:) = Pc(:).^(-(iterCons(it)./2));
+    Referror(:) = (maxRerror(iterCons(it),1)/Referror(1)) .* Referror(:);
     loglog(Pc(:), Referror(:),'LineStyle','--','Color',color_map(it,:),'LineWidth',1.5);
     ct = ct + 1;
 end
@@ -110,7 +104,7 @@ hold off;
 set(gca,'Fontsize',16);
 grid on;
 xlabel('No. of particles per cell');
-ylabel('Rel. error');
+%ylabel('Rel. error');
 xticks([5 10 20 40 80]);
 legend('boxoff');
 legend([pt],'$k=1$','$k=2$','$k=3$','$k=4$','$k=5$','$k=6$','$k=7$','Location','southwest','FontSize',16);

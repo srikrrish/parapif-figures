@@ -31,6 +31,7 @@ Perror = cell(nranks, nCycles);
 iterRank = cell(nranks, nCycles);
 figiter=figure;
 ct=1;
+
 for ng=1:length(grid)
     grid(ng)
     dir = ['../../', test_str, '/corrected_shape_function/Verification_studies/',time_str,'/',Np_str, '/',num2str(grid(ng)),grid_str,'/'];
@@ -76,20 +77,25 @@ for ng=1:length(grid)
         end
 
 
-        %For Landau damping 0.5 is a good factor
-        if(ng==1)
-            factor = 0.5;
-        else
-            factor = 1.5;
-        end
-        Referrorit = ((factor.*mesh_sizes(ng)).^(2.*(1:max_iter)))./(factorial((1:max_iter)));
-        Referrorit(:) = (maxRerror(8,ng)/Referrorit(8)) .* Referrorit(:);
+        %Mesh size dependent adhoc constant
+        %if(ng==1)
+        %    factor = 0.75;
+        %elseif(ng==2)
+        %    factor = 1.25;
+        %elseif(ng==3)
+        %    factor = 1.75;
+        %elseif(ng == 4)
+        %    factor = 3.0;
+        %end
+        %Referrorit = ((factor.*mesh_sizes(ng)).^(2.*(1:max_iter)))./(factorial((1:max_iter)));
+        %factor_mesh(ng) = (maxRerror(8,ng)/Referrorit(8)); 
+        %Referrorit(:) = factor_mesh(ng) .* Referrorit(:);
 
         pt(ct) = semilogy((1:max_iter)',maxRerror(1:max_iter,ng),'LineStyle','-','Marker','*','Color',color_map(ng,:),'LineWidth',1.5);
         hold on;
         %semilogy((1:max_iter)',maxPerror(1:max_iter,ng),'LineStyle','-','Marker','s','Color',color_map(ng,:),'LineWidth',1.5);
         %hold on;
-        semilogy((1:max_iter)', Referrorit(:),'LineStyle','--','Color',color_map(ng,:),'LineWidth',1.5);
+        %semilogy((1:max_iter)', Referrorit(:),'LineStyle','--','Color',color_map(ng,:),'LineWidth',1.5);
         ct = ct + 1;
 end
 set(gca,'Fontsize',16);
@@ -111,7 +117,7 @@ for it=1:length(iterCons)
     %loglog(mesh_sizes(:), maxPerror(iterCons(it),:)','LineStyle','-','Marker','s','Color',color_map(it,:),'LineWidth',1.5);
     %hold on;
 
-    Referror = ((1.5.*mesh_sizes(:)).^(2.*iterCons(it)))./(factorial(iterCons(it)));
+    Referror = mesh_sizes(:).^(2.*iterCons(it));
     Referror(:) = (maxRerror(iterCons(it),1)/Referror(1)) .* Referror(:);
 
     loglog(mesh_sizes(:), Referror(:),'LineStyle','--','Color',color_map(it,:),'LineWidth',1.5);
@@ -121,12 +127,7 @@ hold off;
 set(gca,'Fontsize',16);
 grid on;
 xlabel('$h$');
-ylabel('Rel. error');
-%legend('Pos. error, $k=1$','Vel. error, $k=1$','$Ng^{-1}$','Pos. error, $k=2$','Vel. error, $k=2$','$Ng^{-2}$',...
-%'Pos. error, $k=3$','Vel. error, $k=3$','$Ng^{-3}$','Pos. error, $k=4$','Vel. error, $k=4$','$Ng^{-4}$','Pos. error, $k=5$','Vel. error, $k=5$','$Ng^{-5}$','Location','bestoutside','FontSize',12);
-%legend('$k=1$','$h^2$','$k=2$','$h^4$','$k=3$','$h^6$',...
-%'$k=4$','$h^8$','$k=5$','$h^{10}$','$k=6$','$h^{12}$','$k=7$','$h^{14}$',...
-%'Location','bestoutside','FontSize',12);
+%ylabel('Rel. error');
 legend('boxoff');
 legend([pt],'$k=1$','$k=2$','$k=3$','$k=4$','$k=5$','$k=6$','$k=7$','Location','southeast','FontSize',16);
 exportgraphics(figgrid,[test_str,'_MaxlocalError_Vs_grid_points_',Np_str,'.pdf']);

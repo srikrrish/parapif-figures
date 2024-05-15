@@ -18,12 +18,14 @@ nranks = 16;
 color_map = get(0, 'DefaultAxesColorOrder');
 grid_str = '64_cube';
 Np_str =  'Pc_10';
-time_str = 'T_768';
+time_str = 'T_192_dt_003125';
 time_end = 19.2;
-test_str = 'PenningTrap';
+test_str = 'TSI';
 
-dir = ['../../', test_str,'/',time_str,'/', Np_str, '/', grid_str, '/'];
+dir = ['../../', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
 
+time_ax = (0:0.1:19.2)';
+para_tol = 1e-8;
 for iCycles=1:length(allCycles)
     nCycles = allCycles(iCycles);
     Rerror = cell(nranks, nCycles);
@@ -32,7 +34,7 @@ for iCycles=1:length(allCycles)
 
     for r=1:nranks
         for nc = 1:nCycles
-            file = [dir, num2str(4),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/fine_1em12/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
+            file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.05/para_tol_1em8/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
             B = readmatrix(file,'NumHeaderLines',1,'Delimiter',' ');
             Rerror{r,nc} = B(:,2);
             Perror{r,nc} = B(:,3);
@@ -104,13 +106,14 @@ for iCycles=1:length(allCycles)
                 hold on;
             end
         end
-        set(gca,'Fontsize',16);
+        semilogy(time_ax,para_tol.*ones(size(time_ax)),'k--','LineWidth',1.5);
+        set(gca,'Fontsize',22);
         hold off;
         grid on;
         xlabel('time');
-        ylabel('Local Rel. error in Pos.');
+        %ylabel('Rel. error in Pos.');
         legend(pl(idx,:),'$k = 1$','$k = 2$','$k = 3$','$k = 4$','$k = 5$','$k = 6$', '$k = 7$','$k = 8$',...
-            '$k = 9$','$k = 10$','$k = 11$','$k=12$','$k=13$','Location','northoutside','Orientation','horizontal','NumColumns',4,'FontSize',16);
+            '$k = 9$','$k = 10$','$k = 11$','$k=12$','$k=13$','Location','northoutside','Orientation','horizontal','NumColumns',4,'FontSize',22);
         if EXPORT_GRAPHICS
             exportgraphics(fig,[test_str,'_RlocalError_Vs_Iter_',grid_str,'_',Np_str,'.pdf']);
         end
@@ -182,13 +185,14 @@ for iCycles=1:length(allCycles)
             end
 
         end
-        set(gca,'Fontsize',16);
+        semilogy(time_ax,para_tol.*ones(size(time_ax)),'k--','LineWidth',1.5);
+        set(gca,'Fontsize',22);
         hold off;
         grid on;
         xlabel('time');
-        ylabel('Local Rel. error in Vel.');
+        %ylabel('Rel. error in Vel.');
         legend(pl(idx,:),'$k = 1$','$k = 2$','$k = 3$','$k = 4$','$k = 5$','$k = 6$', '$k = 7$','$k = 8$',...
-            '$k = 9$','$k = 10$','$k = 11$','$k=12$','$k=13$','Location','northoutside','Orientation','horizontal','NumColumns',4,'FontSize',16);
+            '$k = 9$','$k = 10$','$k = 11$','$k=12$','$k=13$','Location','northoutside','Orientation','horizontal','NumColumns',4,'FontSize',22);
         if EXPORT_GRAPHICS
             exportgraphics(fig,[test_str,'_PlocalError_Vs_Iter_',grid_str,'_',Np_str,'.pdf']);
         end
@@ -232,11 +236,11 @@ for iCycles=1:length(allCycles)
         hold on;
         plot(1:max_iter', maxPerror(:),'b--s','LineWidth',1.5);
         hold off;
-        set(gca,'Fontsize',16);
+        set(gca,'Fontsize',22);
         grid on;
         xlabel('Iterations');
         ylabel('Rel. error');
-        legend('Pos. error','Vel. error','Location','southwest','FontSize',16);
+        legend('Pos. error','Vel. error','Location','southwest','FontSize',22);
         if EXPORT_GRAPHICS
             exportgraphics(fig,[test_str,'_MaxlocalError_Vs_Iter_',grid_str,'_',Np_str,'.pdf']);
         end

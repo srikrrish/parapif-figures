@@ -7,18 +7,18 @@ set(0,'defaultLegendInterpreter','latex');
 set(0,'defaultAxesTickLabelInterpreter','latex');
 
 nranks = 16;
-sranks = 16;
+sranks = 4;
 nCycles = 1;
-time_str = 'T_768'
+time_str = 'T_192_dt_003125'
 grid_str = '64_cube';
-Np_str =  'Pc_80';
+Np_str =  'Pc_10';
 test_str = 'TSI';
-dir = ['../../', test_str,'/',time_str,'/', Np_str, '/', grid_str, '/'];
+dir = ['../../', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
 iterRank = cell(nranks, nCycles);
 fig=figure;
 for nc=1:nCycles
     for r=1:nranks
-        file = [dir, num2str(4),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/fine_1em12/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
+        file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.05/para_tol_1em8/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
         B = readmatrix(file,'NumHeaderLines',1,'Delimiter',' ');
         iterRank{r,nc} = B(:,1);
     end
@@ -48,7 +48,7 @@ for nc=1:nCycles
         for r=start_rank:step:end_rank
             r
             if(iter <= iterRank{r,nc}(end))
-                file = [dir, num2str(4),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/fine_1em12/data/FieldBumponTail_rank_', num2str(r-1),'_nc_',num2str(nc),'_iter_',num2str(iter),'.csv'];
+                file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.05/para_tol_1em8/data/FieldBumponTail_rank_', num2str(r-1),'_nc_',num2str(nc),'_iter_',num2str(iter),'.csv'];
                 B = readmatrix(file,'NumHeaderLines',0,'Delimiter',' ');
                 total = total + size(B,1);
                 EzIter{iter}(shift:total, :) = B(:,2:end);
@@ -74,19 +74,43 @@ for nc=1:nCycles
     
     color_map = get(0, 'DefaultAxesColorOrder');
     for iter=1:max_iter
-        pl(nc, iter) = semilogy(timeIter{iter}(:),EzIter{iter}(:,1),'LineStyle','-','Color',color_map(mod(iter,7)+1,:),'LineWidth',1.5);
+        if(iter <= 7)
+            nco = iter;
+            linestyle = '-';
+        elseif((iter > 7) && (iter <=14))
+            nco = mod(iter, 7);
+            if(nco == 0)
+                nco = 1;
+            end
+            linestyle = '--';
+        elseif((iter > 14) && (iter <=21))
+            nco = mod(iter, 7);
+            if(nco == 0)
+                nco = 1;
+            end
+            linestyle = '-.';
+        end
+        pl(nc, iter) = semilogy(timeIter{iter}(:),EzIter{iter}(:,1),'LineStyle',linestyle,'Color',color_map(nco,:),'LineWidth',1.5);
         hold on;
     end
     if(nc == 1)
-        theoE1 = semilogy(timeIter{2}(:),theo_rate1,'k--','LineWidth',1.5);
+        theoE1 = semilogy(timeIter{2}(:),theo_rate1,'b--','LineWidth',1.5);
     end
     hold on;
 end
+
+%%Plot reference curve for serial time stepping
+dir_serial = ['../../../ElectrostaticPIF/',test_str,'_conservation_studies/corrected_shape_function/'];
+A_pif=readmatrix([dir_serial,'64_64_64_Pc_10/T_192/ngpus_',num2str(sranks),...
+                  '/dt_003125/fine_tol_1em7/data/FieldBumponTail_',num2str(sranks),'.csv'],'NumHeaderLines',1,'Delimiter',' ');
+semilogy(A_pif(:,1),A_pif(:,2),'k--','LineWidth',2.0);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 hold off;
 grid on;
 xlabel('time');
-ylabel('$\int E_z^2 \mathrm{d}V$');
+%ylabel('$\int E_z^2 \mathrm{d}V$');
 set(gca,'Fontsize',16);
-legend(pl(1,:),'$k = 1$','$k = 2$','$k = 3$','$k = 4$','$k = 5$','$k = 6$','$k = 7$','$k = 8$','$k = 9$','$k = 10$','$k = 11$','Location','southeast','FontSize',16);
+legend('$k = 1$','$k = 2$','$k = 3$','$k = 4$','$k = 5$','$k = 6$','$k = 7$','$k = 8$','$k = 9$','analytical','serial','Location','north','NumColumns',4,'FontSize',16);
 legend('boxoff');
 exportgraphics(fig,[test_str,'_growth_rate_',grid_str,'_',Np_str,'.pdf']);

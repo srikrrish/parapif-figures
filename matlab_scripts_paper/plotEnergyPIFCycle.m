@@ -7,20 +7,20 @@ set(0,'defaultLegendInterpreter','latex');
 set(0,'defaultAxesTickLabelInterpreter','latex'); 
 
 nranks = 16;
-sranks = 16;
+sranks = 4;
 nCycles = 1;
-time_str = 'T_768'
+time_str = 'T_192_dt_003125'
 grid_str = '64_cube';
-Np_str =  'Pc_80';
-test_str = 'TSI';
-dir = ['../../', test_str,'/',time_str,'/', Np_str, '/', grid_str, '/'];
+Np_str =  'Pc_10';
+test_str = 'PenningTrap';
+dir = ['../../', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
 color_map = get(0, 'DefaultAxesColorOrder');
 
 iterRank = cell(nranks, nCycles);
 fig=figure;
 for nc=1:nCycles
     for r=1:nranks
-        file = [dir, num2str(4),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/fine_1em12/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
+        file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.003125/para_tol_1em8/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
         B = readmatrix(file,'NumHeaderLines',1,'Delimiter',' ');
         iterRank{r,nc} = B(:,1);
     end
@@ -51,7 +51,7 @@ for nc=1:nCycles
         for r=start_rank:step:end_rank
             r
             if(iter <= iterRank{r,nc}(end))
-                file = [dir, num2str(4),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/fine_1em12/data/Energy_rank_', num2str(r-1),'_nc_',num2str(nc),'_iter_',num2str(iter),'.csv'];
+                file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.003125/para_tol_1em8/data/Energy_rank_', num2str(r-1),'_nc_',num2str(nc),'_iter_',num2str(iter),'.csv'];
                 B = readmatrix(file,'NumHeaderLines',0,'Delimiter',' ');
                 total = total + size(B,1);
                 energyIter{iter}(shift:total, :) = B(:,2:4);
@@ -66,20 +66,50 @@ for nc=1:nCycles
     end
     
     for iter=1:max_iter
-        energy_error_pif = abs(energyIter{iter}(:,3) - initial_energy)./abs(initial_energy);
-        %energy_error_pif = energyIter{iter}(:,3);
-        pl(nc, iter) = semilogy(timeIter{iter}(:),energy_error_pif(:),'LineStyle','-','Color',color_map(mod(iter,7)+1,:),'LineWidth',1.5);
+
+        if(iter <= 7)
+            nco = iter;
+            linestyle = '-';
+        elseif((iter > 7) && (iter <=14))
+            nco = mod(iter, 7);
+            if(nco == 0)
+                nco = 1;
+            end
+            linestyle = '--';
+        elseif((iter > 14) && (iter <=21))
+            nco = mod(iter, 7);
+            if(nco == 0)
+                nco = 1;
+            end
+            linestyle = '-.';
+        end
+
+        %energy_error_pif = abs(energyIter{iter}(:,3) - initial_energy)./abs(initial_energy);
+        energy_error_pif = energyIter{iter}(:,3);
+        pl(nc, iter) = semilogy(timeIter{iter}(:),energy_error_pif(:),'LineStyle',linestyle,'Color',color_map(nco,:),'LineWidth',1.5);
         hold on;
     end
 end
+
+%%Plot reference energy error curve for serial time stepping
+dir_serial = ['../../../ElectrostaticPIF/',test_str,'_conservation_studies/corrected_shape_function/'];
+A_pif=readmatrix([dir_serial,'64_64_64_Pc_10/T_192/ngpus_',num2str(sranks),...
+                  '/dt_003125/fine_tol_1em7/data/Energy_',num2str(sranks),'.csv'],'NumHeaderLines',1,'Delimiter',' ');
+%energy_error_pif_serial = abs(A_pif(:,4) - A_pif(1,4))/abs(A_pif(1,4));
+energy_error_pif_serial = A_pif(:,4);
+semilogy(A_pif(:,1),energy_error_pif_serial(:),'k--','LineWidth',2.0);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 hold off;
 grid on;
 xlabel('time');
-ylabel('Rel. Energy error');
+ylabel('Rel. error');
 %ylabel('Total Energy');
-set(gca,'Fontsize',16);
-legend(pl(1,:),'k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','k = 8',...
-                 'k = 9','k = 10','k = 11','k = 12','k = 13',...
-                 'Location','northeast','FontSize',16);
+set(gca,'Fontsize',22);
+legend('k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','serial',...
+        'Location','north','Numcolumns',4,'FontSize',22);
+%legend('k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','k = 8','k = 9','serial',...
+%        'Location','south','Numcolumns',4,'FontSize',22);
 legend('boxoff');
-exportgraphics(fig,[test_str,'_Energy_error_',grid_str,'_',Np_str,'.pdf']);
+%exportgraphics(fig,[test_str,'_Energy_error_',grid_str,'_',Np_str,'.pdf']);
+exportgraphics(fig,[test_str,'_Energy_',grid_str,'_',Np_str,'.pdf']);
