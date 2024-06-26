@@ -12,7 +12,7 @@ nCycles = 1;
 time_str = 'T_192_dt_003125'
 grid_str = '64_cube';
 Np_str =  'Pc_10';
-test_str = 'PenningTrap';
+test_str = 'LandauDamping';
 dir = ['../../', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
 color_map = get(0, 'DefaultAxesColorOrder');
 
@@ -20,7 +20,7 @@ iterRank = cell(nranks, nCycles);
 fig=figure;
 for nc=1:nCycles
     for r=1:nranks
-        file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.003125/para_tol_1em8/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
+        file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.05/para_tol_1em8/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
         B = readmatrix(file,'NumHeaderLines',1,'Delimiter',' ');
         iterRank{r,nc} = B(:,1);
     end
@@ -51,7 +51,7 @@ for nc=1:nCycles
         for r=start_rank:step:end_rank
             r
             if(iter <= iterRank{r,nc}(end))
-                file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.003125/para_tol_1em8/data/Energy_rank_', num2str(r-1),'_nc_',num2str(nc),'_iter_',num2str(iter),'.csv'];
+                file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.05/para_tol_1em8/data/Energy_rank_', num2str(r-1),'_nc_',num2str(nc),'_iter_',num2str(iter),'.csv'];
                 B = readmatrix(file,'NumHeaderLines',0,'Delimiter',' ');
                 total = total + size(B,1);
                 energyIter{iter}(shift:total, :) = B(:,2:4);
@@ -84,8 +84,8 @@ for nc=1:nCycles
             linestyle = '-.';
         end
 
-        %energy_error_pif = abs(energyIter{iter}(:,3) - initial_energy)./abs(initial_energy);
-        energy_error_pif = energyIter{iter}(:,3);
+        energy_error_pif = abs(energyIter{iter}(:,3) - initial_energy)./abs(initial_energy);
+        %energy_error_pif = energyIter{iter}(:,3);
         pl(nc, iter) = semilogy(timeIter{iter}(:),energy_error_pif(:),'LineStyle',linestyle,'Color',color_map(nco,:),'LineWidth',1.5);
         hold on;
     end
@@ -95,21 +95,21 @@ end
 dir_serial = ['../../../ElectrostaticPIF/',test_str,'_conservation_studies/corrected_shape_function/'];
 A_pif=readmatrix([dir_serial,'64_64_64_Pc_10/T_192/ngpus_',num2str(sranks),...
                   '/dt_003125/fine_tol_1em7/data/Energy_',num2str(sranks),'.csv'],'NumHeaderLines',1,'Delimiter',' ');
-%energy_error_pif_serial = abs(A_pif(:,4) - A_pif(1,4))/abs(A_pif(1,4));
-energy_error_pif_serial = A_pif(:,4);
+energy_error_pif_serial = abs(A_pif(:,4) - A_pif(1,4))/abs(A_pif(1,4));
+%energy_error_pif_serial = A_pif(:,4);
 semilogy(A_pif(:,1),energy_error_pif_serial(:),'k--','LineWidth',2.0);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 hold off;
 grid on;
 xlabel('time');
-ylabel('Rel. error');
+ylabel('Rel. energy error');
 %ylabel('Total Energy');
 set(gca,'Fontsize',22);
 legend('k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','serial',...
-        'Location','north','Numcolumns',4,'FontSize',22);
+        'Location','south','Numcolumns',4,'FontSize',22);
 %legend('k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','k = 8','k = 9','serial',...
 %        'Location','south','Numcolumns',4,'FontSize',22);
 legend('boxoff');
-%exportgraphics(fig,[test_str,'_Energy_error_',grid_str,'_',Np_str,'.pdf']);
-exportgraphics(fig,[test_str,'_Energy_',grid_str,'_',Np_str,'.pdf']);
+exportgraphics(fig,[test_str,'_Energy_error_',grid_str,'_',Np_str,'.pdf']);
+%exportgraphics(fig,[test_str,'_Energy_',grid_str,'_',Np_str,'.pdf']);

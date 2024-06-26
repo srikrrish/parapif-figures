@@ -13,7 +13,7 @@ nCycles = 1;
 time_str = 'T_192_dt_003125'
 grid_str = '64_cube';
 Np_str =  'Pc_10';
-test_str = 'TSI';
+test_str = 'PenningTrap';
 dir = ['../../', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
 color_map = get(0, 'DefaultAxesColorOrder');
 
@@ -28,7 +28,7 @@ iterRank = cell(nranks, nCycles);
 fig=figure;
 for nc=1:nCycles
     for r=1:nranks
-        file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.05/para_tol_1em8/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
+        file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.003125/para_tol_1em8/data/localError_rank_', num2str(r-1),'_nc_',num2str(nc),'.csv'];
         B = readmatrix(file,'NumHeaderLines',1,'Delimiter',' ');
         iterRank{r,nc} = B(:,1);
     end
@@ -61,7 +61,7 @@ for nc=1:nCycles
         for r=start_rank:step:end_rank
             r
             if(iter <= iterRank{r,nc}(end))
-                file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.05/para_tol_1em8/data/Energy_rank_', num2str(r-1),'_nc_',num2str(nc),'_iter_',num2str(iter),'.csv'];
+                file = [dir, num2str(nCycles),'_cycles/',num2str(sranks),'x',num2str(nranks),'/coarse_PIC/coarse_dt_0.003125/para_tol_1em8/data/Energy_rank_', num2str(r-1),'_nc_',num2str(nc),'_iter_',num2str(iter),'.csv'];
                 B = readmatrix(file,'NumHeaderLines',0,'Delimiter',' ');
                 total = total + size(B,1);
                 chargeIter{iter}(shift:total, :) = B(:,5);
@@ -109,8 +109,11 @@ semilogy(A_pif(:,1),charge_error_pif_serial(:),'k--','LineWidth',2.0);
 hold off;
 grid on;
 xlabel('time');
-%ylabel('Rel. Charge error');
+ylabel('Rel. error');
 set(gca,'Fontsize',22);
+legend('k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','serial',...
+        'Location','northoutside','Numcolumns',4,'FontSize',22);
+legend('boxoff');
 %legend(pl(idx,:),'k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','k = 8',...
 %                 'k = 9','k = 10','k = 11','k = 12','k = 13','k = 14','k = 15','k = 16',...
 %                 'Location','northoutside','Orientation','horizontal','NumColumns',4,'FontSize',16);

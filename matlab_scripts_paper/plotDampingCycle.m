@@ -147,7 +147,7 @@ ylabel('$\int E_z^2 \mathrm{d}V$');
 if(strcmp(test,'nonlinear'))
     ylim([1e-3 2e3]);
 end
-set(gca,'Fontsize',16);
-legend('$k = 1$','$k = 2$','$k = 3$','$k = 4$','$k = 5$','$k = 6$','$k = 7$','analytical','serial','Location','south','NumColumns',4,'FontSize',16);
+set(gca,'Fontsize',22);
+legend('$k = 1$','$k = 2$','$k = 3$','$k = 4$','$k = 5$','$k = 6$','$k = 7$','analytical','serial','Location','south','NumColumns',4,'FontSize',22);
 legend('boxoff');
 exportgraphics(fig,[test_str,'_weak_damp_rate_',grid_str,'_',Np_str,'.pdf']);

@@ -126,11 +126,11 @@ hold on;
 %For Landau damping
 %Best coarse propagator: PIF, coarse_tol=0.001, coarse_dt=0.05, 1 cycle
 ngt_landau = [64 128 256 512 1024 1536];
-tspacetime_landau = [708.3 709.5 367 241 136.4 103];  
+tspacetime_landau1 = [708.3 709.5 367 241 136.4 103];  
 time_ideal = zeros(length(ngt_landau),1);
-time_ideal(:) = tspacetime_landau(1); 
+time_ideal(:) = tspacetime_landau1(1); 
 time_ideal(:) = time_ideal(1)./(ngt_landau(:)./ngt_landau(1));
-p1 = plot(ngt_landau(:),tspacetime_landau(:),'-d','Color',color_map(2,:),'MarkerSize',8,'LineWidth',1.5);
+p1 = plot(ngt_landau(:),tspacetime_landau1(:),'-d','Color',color_map(2,:),'MarkerSize',8,'LineWidth',1.5);
 p1.MarkerFaceColor = p1.Color;
 hold on;
 plot(ngt_landau(:),time_ideal(:),'k--','LineWidth',1.0);
@@ -138,16 +138,16 @@ plot(ngt_landau(:),time_ideal(:),'k--','LineWidth',1.0);
 %For Two-stream instability
 %Best coarse propagator: PIF, coarse_tol=0.0001, coarse_dt=0.05, 1 cycle
 ngt_tsi = [64 128 256 512 1024 1536];
-tspacetime_tsi = [711.5 541.2 284.9 204.6 118.2 91.4];  
-p2 = plot(ngt_tsi(:),tspacetime_tsi(:),'-*','Color',color_map(2,:),'MarkerSize',8,'LineWidth',1.5);
+tspacetime_tsi1 = [711.5 541.2 284.9 204.6 118.2 91.4];  
+p2 = plot(ngt_tsi(:),tspacetime_tsi1(:),'-*','Color',color_map(2,:),'MarkerSize',8,'LineWidth',1.5);
 p2.MarkerFaceColor = p2.Color;
 hold on;
 
 %For Penning trap
-%Best coarse propagator: PIC, coarse_dt=0.003125, 16 cycles
+%Best coarse propagator: PIC, coarse_dt=0.0125, 16 cycles
 ngt_penning = [64 128 256 512 1024 1536];
-tspacetime_penning = [709.2 717.3 477.3 278 211.8 179.3];  
-p3 = plot(ngt_penning(:),tspacetime_penning(:),'-h','Color',color_map(2,:),'MarkerSize',8,'LineWidth',1.5);
+tspacetime_penning1 = [709.2 717.3 477.3 278 211.8 179.3];  
+p3 = plot(ngt_penning(:),tspacetime_penning1(:),'-h','Color',color_map(2,:),'MarkerSize',8,'LineWidth',1.5);
 p3.MarkerFaceColor = p3.Color;
 hold on;
 
@@ -155,29 +155,22 @@ hold on;
 %128^3, Pc = 10, find_dt = 0.003125
 %For Landau damping
 %Best coarse propagator: PIF, coarse_tol=0.001, coarse_dt=0.05, 1 cycle
-ngt_landau = [64 128 256 512 1024 1536];
-tspacetime_landau = [708 536.7 256 156.8 93.1 74];  
-time_ideal = zeros(length(ngt_landau),1);
-time_ideal(:) = tspacetime_landau(1); 
-time_ideal(:) = time_ideal(1)./(ngt_landau(:)./ngt_landau(1));
-p4 = plot(ngt_landau(:),tspacetime_landau(:),'-.d','Color',color_map(4,:),'MarkerSize',8,'LineWidth',1.5);
+tspacetime_landau7 = [708 536.7 256 156.8 93.1 74];  
+p4 = plot(ngt_landau(:),tspacetime_landau7(:),'-.d','Color',color_map(4,:),'MarkerSize',8,'LineWidth',1.5);
 p4.MarkerFaceColor = p4.Color;
 hold on;
-plot(ngt_landau(:),time_ideal(:),'k--','LineWidth',1.0);
 
 %For Two-stream instability
 %Best coarse propagator: PIF, coarse_tol=0.0001, coarse_dt=0.05, 1 cycle
-ngt_tsi = [64 128 256 512 1024 1536];
-tspacetime_tsi = [717.1 543.5 256 157.6 96 76.9];  
-p5 = plot(ngt_tsi(:),tspacetime_tsi(:),'-.*','Color',color_map(4,:),'MarkerSize',8,'LineWidth',1.5);
+tspacetime_tsi7 = [717.1 543.5 256 157.6 96 76.9];  
+p5 = plot(ngt_tsi(:),tspacetime_tsi7(:),'-.*','Color',color_map(4,:),'MarkerSize',8,'LineWidth',1.5);
 p5.MarkerFaceColor = p5.Color;
 hold on;
 
 %For Penning trap
 %Best coarse propagator: PIC, coarse_dt=0.003125, 16 cycles, 2h mesh size
-ngt_penning = [64 128 256 512 1024 1536];
-tspacetime_penning = [653.5 658.8 358.4 200.2 122 99.1];  
-p6 = plot(ngt_penning(:),tspacetime_penning(:),'-.h','Color',color_map(4,:),'MarkerSize',8,'LineWidth',1.5);
+tspacetime_penning7 = [653.5 658.8 358.4 200.2 122 99.1];  
+p6 = plot(ngt_penning(:),tspacetime_penning7(:),'-.h','Color',color_map(4,:),'MarkerSize',8,'LineWidth',1.5);
 p6.MarkerFaceColor = p6.Color;
 
 hold off;

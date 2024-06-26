@@ -13,7 +13,7 @@ nCycles = 1;
 time_str = 'T_192_dt_003125'
 grid_str = '64_cube';
 Np_str =  'Pc_10';
-test_str = 'LandauDamping';
+test_str = 'TSI';
 dir = ['../../', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
 color_map = get(0, 'DefaultAxesColorOrder');
 
@@ -117,6 +117,11 @@ xlabel('time');
 %ylabel('Rel. error in Momentum mag.');
 %ylabel('Total Momentum');
 set(gca,'Fontsize',22);
+%legend('k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','serial',...
+%        'Location','northoutside','Numcolumns',4,'FontSize',22);
+legend('k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','k = 8','k = 9','serial',...
+        'Location','northoutside','Numcolumns',5,'FontSize',22);
+legend('boxoff');
 %legend(pl(idx,:),'k = 1','k = 2','k = 3','k = 4','k = 5','k = 6','k = 7','k = 8',...
 %                 'k = 9','k = 10','k = 11','k = 12','k = 13','k = 14','k = 15','k = 16',...
 %                 'Location','northoutside','Orientation','horizontal','NumColumns',4,'FontSize',16);
