@@ -22,7 +22,7 @@ test_str = 'LandauDamping';
 
 maxRerror = zeros(2,1);
 maxPerror = zeros(2,1);
-dir = ['../../',test_str,'/corrected_shape_function/Verification_studies/',time_str,'/',Np_str,'/', grid_str,'/'];
+dir = ['../data/PinT/',test_str,'/corrected_shape_function/Verification_studies/',time_str,'/',Np_str,'/', grid_str,'/'];
 Rerror = cell(nranks, nCycles);
 Perror = cell(nranks, nCycles);
 iterRank = cell(nranks, nCycles);

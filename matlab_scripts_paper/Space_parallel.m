@@ -1,7 +1,7 @@
 clear all;
 Nsystems = 1;
 dir_sys = cell(Nsystems, 1);
-dir_sys{1} = '/p/project/ccstma/muralikrishnan1/ippl/build_with_kokkos_4_2_00_heffte_2_4_0_finufft_2_2_0_psmpi/alpine/ElectrostaticPIF/PenningTrap_strong_scaling_studies/corrected_shape_function';
+dir_sys{1} = '../data/serial_time/PenningTrap_strong_scaling_studies/corrected_shape_function';
 nx = [128];
 ny = [128];
 nz = [128];

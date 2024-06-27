@@ -22,7 +22,7 @@ time_str = 'T_192_dt_003125';
 time_end = 19.2;
 test_str = 'TSI';
 
-dir = ['../../', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
+dir = ['../data/PinT/', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
 
 time_ax = (0:0.1:19.2)';
 para_tol = 1e-8;

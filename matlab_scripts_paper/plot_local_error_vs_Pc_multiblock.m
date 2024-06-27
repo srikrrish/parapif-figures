@@ -26,7 +26,7 @@ figiter=figure;
 ct = 1;
 for p=1:length(Pc) 
     Pc(p)
-    dir = ['../../', test_str, '/corrected_shape_function/Verification_studies/',time_str,'/',Np_str,num2str(Pc(p)),'/', grid_str,'/'];
+    dir = ['../data/PinT/', test_str, '/corrected_shape_function/Verification_studies/',time_str,'/',Np_str,num2str(Pc(p)),'/', grid_str,'/'];
 
 
     for r=1:nranks

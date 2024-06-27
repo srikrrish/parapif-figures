@@ -14,7 +14,7 @@ time_str = 'T_192_dt_003125'
 grid_str = '64_cube';
 Np_str =  'Pc_10';
 test_str = 'TSI';
-dir = ['../../', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
+dir = ['../data/PinT/', test_str,'/corrected_shape_function/Conservation_studies/',time_str,'/', Np_str, '/', grid_str, '/'];
 color_map = get(0, 'DefaultAxesColorOrder');
 
 iterRank = cell(nranks, nCycles);
@@ -103,7 +103,7 @@ for nc=1:nCycles
 end
         
 %%Plot reference momentum error curve for serial time stepping
-dir_serial = ['../../../ElectrostaticPIF/',test_str,'_conservation_studies/corrected_shape_function/'];
+dir_serial = ['../data/serial_time/',test_str,'_conservation_studies/corrected_shape_function/'];
 A_pif=readmatrix([dir_serial,'64_64_64_Pc_10/T_192/ngpus_',num2str(sranks),...
                   '/dt_003125/fine_tol_1em7/data/Energy_',num2str(sranks),'.csv'],'NumHeaderLines',1,'Delimiter',' ');
 mom_error_pif_serial = abs(A_pif(:,6) - A_pif(1,6))/abs(A_pif(1,6));

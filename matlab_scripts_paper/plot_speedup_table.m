@@ -17,7 +17,7 @@ ncycles = {'1';'1';'1';'1'};
 %%coarse_tol_mod = {'$10^{-5}$';'$10^{-4}$';'$10^{-3}$';'PIC'};
 ncoarse_dt=length(coarse_dt);
 ncoarse_tol = length(coarse_tol);
-dir=['../../',test,'/corrected_shape_function/speedup_studies/T_192_dt_',fine_dt,'/Pc_',pc,'/',ng,'_cube','/'];
+dir=['../data/PinT/',test,'/corrected_shape_function/speedup_studies/T_192_dt_',fine_dt,'/Pc_',pc,'/',ng,'_cube','/'];
 
 
 parallel_timers=['mainTimer...........'];

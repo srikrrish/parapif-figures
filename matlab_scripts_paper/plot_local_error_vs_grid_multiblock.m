@@ -34,7 +34,7 @@ ct=1;
 
 for ng=1:length(grid)
     grid(ng)
-    dir = ['../../', test_str, '/corrected_shape_function/Verification_studies/',time_str,'/',Np_str, '/',num2str(grid(ng)),grid_str,'/'];
+    dir = ['../data/PinT/', test_str, '/corrected_shape_function/Verification_studies/',time_str,'/',Np_str, '/',num2str(grid(ng)),grid_str,'/'];
 
 
     for r=1:nranks
