@@ -1,0 +1,160 @@
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '20971520' is not parsed by Ippl. Make sure your application parses it.
+Option '19.2' is not parsed by Ippl. Make sure your application parses it.
+Option '0.003125' is not parsed by Ippl. Make sure your application parses it.
+Option '0.003125' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-8' is not parsed by Ippl. Make sure your application parses it.
+Option '16' is not parsed by Ippl. Make sure your application parses it.
+Option 'B-spline' is not parsed by Ippl. Make sure your application parses it.
+Option '7' is not parsed by Ippl. Make sure your application parses it.
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '0.1' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-7' is not parsed by Ippl. Make sure your application parses it.
+Option 'PIC' is not parsed by Ippl. Make sure your application parses it.
+PenningTrapPinT{1023}> Parareal PenningTrapPinT
+PenningTrapPinT{1023}> Slice dT: 0.0375
+PenningTrapPinT{1023}> No. of fine time steps: 12
+PenningTrapPinT{1023}> No. of coarse time steps: 12
+PenningTrapPinT{1023}> Tolerance: 1e-08 No. of cycles: 16
+PenningTrapPinT{1023}> Np= 20971520 Fourier modes = ( 128 , 128 , 128 ) Grid points = ( 64 , 64 , 64 )
+PenningTrapPinT{1023}> particles created and initial conditions assigned 
+PenningTrapPinT{1023}> Finished iteration: 1 in cycle: 1 Rerror: 7.50792e-05 Perror: 0.00164212
+PenningTrapPinT{1023}> Finished iteration: 2 in cycle: 1 Rerror: 6.12604e-07 Perror: 1.53575e-05
+PenningTrapPinT{1023}> Finished iteration: 3 in cycle: 1 Rerror: 5.26211e-09 Perror: 1.24672e-07
+PenningTrapPinT{1023}> Finished iteration: 4 in cycle: 1 Rerror: 6.44234e-11 Perror: 1.45691e-09
+PenningTrapPinT{0}> Finished iteration: 1 in cycle: 2 Rerror: 9.95486e-05 Perror: 0.00172647
+PenningTrapPinT{0}> Finished iteration: 2 in cycle: 2 Rerror: 7.90221e-07 Perror: 1.49755e-05
+PenningTrapPinT{0}> Finished iteration: 3 in cycle: 2 Rerror: 4.94541e-09 Perror: 1.00527e-07
+PenningTrapPinT{0}> Finished iteration: 4 in cycle: 2 Rerror: 4.14799e-11 Perror: 8.01676e-10
+PenningTrapPinT{1023}> Finished iteration: 1 in cycle: 3 Rerror: 9.30151e-05 Perror: 0.00169037
+PenningTrapPinT{1023}> Finished iteration: 2 in cycle: 3 Rerror: 8.96811e-07 Perror: 1.83581e-05
+PenningTrapPinT{1023}> Finished iteration: 3 in cycle: 3 Rerror: 7.66907e-09 Perror: 1.79156e-07
+PenningTrapPinT{1023}> Finished iteration: 4 in cycle: 3 Rerror: 6.85366e-11 Perror: 1.85327e-09
+PenningTrapPinT{0}> Finished iteration: 1 in cycle: 4 Rerror: 8.92347e-05 Perror: 0.00175671
+PenningTrapPinT{0}> Finished iteration: 2 in cycle: 4 Rerror: 1.01083e-06 Perror: 2.38665e-05
+PenningTrapPinT{0}> Finished iteration: 3 in cycle: 4 Rerror: 9.40059e-09 Perror: 2.67246e-07
+PenningTrapPinT{0}> Finished iteration: 4 in cycle: 4 Rerror: 7.65109e-11 Perror: 2.51718e-09
+PenningTrapPinT{1023}> Finished iteration: 1 in cycle: 5 Rerror: 7.64109e-05 Perror: 0.00195604
+PenningTrapPinT{1023}> Finished iteration: 2 in cycle: 5 Rerror: 9.99337e-07 Perror: 2.85676e-05
+PenningTrapPinT{1023}> Finished iteration: 3 in cycle: 5 Rerror: 1.11514e-08 Perror: 3.86056e-07
+PenningTrapPinT{1023}> Finished iteration: 4 in cycle: 5 Rerror: 9.98624e-11 Perror: 4.22446e-09
+PenningTrapPinT{0}> Finished iteration: 1 in cycle: 6 Rerror: 6.245e-05 Perror: 0.00198046
+PenningTrapPinT{0}> Finished iteration: 2 in cycle: 6 Rerror: 5.70322e-07 Perror: 2.21111e-05
+PenningTrapPinT{0}> Finished iteration: 3 in cycle: 6 Rerror: 4.64652e-09 Perror: 2.05763e-07
+PenningTrapPinT{0}> Finished iteration: 4 in cycle: 6 Rerror: 4.27364e-11 Perror: 2.07783e-09
+PenningTrapPinT{1023}> Finished iteration: 1 in cycle: 7 Rerror: 7.19167e-05 Perror: 0.00178756
+PenningTrapPinT{1023}> Finished iteration: 2 in cycle: 7 Rerror: 5.92154e-07 Perror: 1.73558e-05
+PenningTrapPinT{1023}> Finished iteration: 3 in cycle: 7 Rerror: 4.53442e-09 Perror: 1.46697e-07
+PenningTrapPinT{1023}> Finished iteration: 4 in cycle: 7 Rerror: 5.31242e-11 Perror: 1.63616e-09
+PenningTrapPinT{0}> Finished iteration: 1 in cycle: 8 Rerror: 9.90799e-05 Perror: 0.00210234
+PenningTrapPinT{0}> Finished iteration: 2 in cycle: 8 Rerror: 1.09558e-06 Perror: 2.50134e-05
+PenningTrapPinT{0}> Finished iteration: 3 in cycle: 8 Rerror: 1.17989e-08 Perror: 2.81125e-07
+PenningTrapPinT{0}> Finished iteration: 4 in cycle: 8 Rerror: 1.59046e-10 Perror: 3.72809e-09
+PenningTrapPinT{1023}> Finished iteration: 1 in cycle: 9 Rerror: 9.68453e-05 Perror: 0.00213867
+PenningTrapPinT{1023}> Finished iteration: 2 in cycle: 9 Rerror: 1.16972e-06 Perror: 2.71873e-05
+PenningTrapPinT{1023}> Finished iteration: 3 in cycle: 9 Rerror: 1.84006e-08 Perror: 4.04668e-07
+PenningTrapPinT{1023}> Finished iteration: 4 in cycle: 9 Rerror: 4.13343e-10 Perror: 9.29463e-09
+PenningTrapPinT{0}> Finished iteration: 1 in cycle: 10 Rerror: 9.13903e-05 Perror: 0.00204272
+PenningTrapPinT{0}> Finished iteration: 2 in cycle: 10 Rerror: 1.06174e-06 Perror: 2.62573e-05
+PenningTrapPinT{0}> Finished iteration: 3 in cycle: 10 Rerror: 1.41193e-08 Perror: 3.40092e-07
+PenningTrapPinT{0}> Finished iteration: 4 in cycle: 10 Rerror: 3.02979e-10 Perror: 7.95446e-09
+PenningTrapPinT{1023}> Finished iteration: 1 in cycle: 11 Rerror: 9.73277e-05 Perror: 0.00251108
+PenningTrapPinT{1023}> Finished iteration: 2 in cycle: 11 Rerror: 1.33273e-06 Perror: 4.00257e-05
+PenningTrapPinT{1023}> Finished iteration: 3 in cycle: 11 Rerror: 1.68078e-08 Perror: 5.49255e-07
+PenningTrapPinT{1023}> Finished iteration: 4 in cycle: 11 Rerror: 2.38055e-10 Perror: 9.43702e-09
+PenningTrapPinT{0}> Finished iteration: 1 in cycle: 12 Rerror: 8.70599e-05 Perror: 0.00245818
+PenningTrapPinT{0}> Finished iteration: 2 in cycle: 12 Rerror: 9.97233e-07 Perror: 3.44989e-05
+PenningTrapPinT{0}> Finished iteration: 3 in cycle: 12 Rerror: 1.05701e-08 Perror: 4.36036e-07
+PenningTrapPinT{0}> Finished iteration: 4 in cycle: 12 Rerror: 1.17166e-10 Perror: 4.90078e-09
+PenningTrapPinT{1023}> Finished iteration: 1 in cycle: 13 Rerror: 8.9705e-05 Perror: 0.00234446
+PenningTrapPinT{1023}> Finished iteration: 2 in cycle: 13 Rerror: 1.0292e-06 Perror: 3.07999e-05
+PenningTrapPinT{1023}> Finished iteration: 3 in cycle: 13 Rerror: 1.19286e-08 Perror: 3.70605e-07
+PenningTrapPinT{1023}> Finished iteration: 4 in cycle: 13 Rerror: 1.77098e-10 Perror: 5.90675e-09
+PenningTrapPinT{0}> Finished iteration: 1 in cycle: 14 Rerror: 0.000107352 Perror: 0.00259041
+PenningTrapPinT{0}> Finished iteration: 2 in cycle: 14 Rerror: 1.74047e-06 Perror: 4.24789e-05
+PenningTrapPinT{0}> Finished iteration: 3 in cycle: 14 Rerror: 3.30198e-08 Perror: 8.33095e-07
+PenningTrapPinT{0}> Finished iteration: 4 in cycle: 14 Rerror: 6.14433e-10 Perror: 1.78549e-08
+PenningTrapPinT{0}> Finished iteration: 5 in cycle: 14 Rerror: 5.03164e-12 Perror: 2.79094e-10
+PenningTrapPinT{1023}> Finished iteration: 1 in cycle: 15 Rerror: 0.000115362 Perror: 0.00281019
+PenningTrapPinT{1023}> Finished iteration: 2 in cycle: 15 Rerror: 2.13594e-06 Perror: 5.2989e-05
+PenningTrapPinT{1023}> Finished iteration: 3 in cycle: 15 Rerror: 4.94879e-08 Perror: 1.26078e-06
+PenningTrapPinT{1023}> Finished iteration: 4 in cycle: 15 Rerror: 1.28931e-09 Perror: 3.54052e-08
+PenningTrapPinT{1023}> Finished iteration: 5 in cycle: 15 Rerror: 2.62401e-11 Perror: 8.48763e-10
+PenningTrapPinT{0}> Finished iteration: 1 in cycle: 16 Rerror: 0.000107415 Perror: 0.00270731
+PenningTrapPinT{0}> Finished iteration: 2 in cycle: 16 Rerror: 1.89614e-06 Perror: 5.16192e-05
+PenningTrapPinT{0}> Finished iteration: 3 in cycle: 16 Rerror: 3.61497e-08 Perror: 1.09355e-06
+PenningTrapPinT{0}> Finished iteration: 4 in cycle: 16 Rerror: 6.71298e-10 Perror: 2.49725e-08
+PenningTrapPinT{0}> Finished iteration: 5 in cycle: 16 Rerror: 7.75029e-12 Perror: 4.21696e-10
+PenningTrapPinT{0}> PenningTrapPinT Parareal: End.
+Timings{0}> ---------------------------------------------
+Timings{0}>      Timing results for 1024 ranks:
+Timings{0}> ---------------------------------------------
+Timings{0}> mainTimer........... Wall tot =    121.986
+Timings{0}> 
+Timings{0}> particlesCreation... Wall max =    5.84836
+Timings{0}>                      Wall avg =    3.07177
+Timings{0}>                      Wall min =   0.155916
+Timings{0}> 
+Timings{0}> timeCommunication... Wall max =    17.5936
+Timings{0}>                      Wall avg =    15.8087
+Timings{0}>                      Wall min =    14.1151
+Timings{0}> 
+Timings{0}> deepCopy............ Wall max =  0.0267528
+Timings{0}>                      Wall avg =  0.0245848
+Timings{0}>                      Wall min =  0.0178363
+Timings{0}> 
+Timings{0}> finePropagator...... Wall max =    83.7468
+Timings{0}>                      Wall avg =    76.5051
+Timings{0}>                      Wall min =    52.6138
+Timings{0}> 
+Timings{0}> coarsePropagator.... Wall max =     4.1843
+Timings{0}>                      Wall avg =    3.74331
+Timings{0}>                      Wall min =    2.81246
+Timings{0}> 
+Timings{0}> dumpData............ Wall max = 0.00323933
+Timings{0}>                      Wall avg = 0.00216483
+Timings{0}>                      Wall min = 0.00141431
+Timings{0}> 
+Timings{0}> computeErrors....... Wall max =  0.0339742
+Timings{0}>                      Wall avg =  0.0186942
+Timings{0}>                      Wall min =  0.0093833
+Timings{0}> 
+Timings{0}> initializeShapeFunc. Wall max = 0.00170227
+Timings{0}>                      Wall avg = 0.000318543
+Timings{0}>                      Wall min = 0.00030884
+Timings{0}> 
+Timings{0}> fieldSolvePIC....... Wall max =    1.65563
+Timings{0}>                      Wall avg =    1.48715
+Timings{0}>                      Wall min =    1.09758
+Timings{0}> 
+Timings{0}> ScatterPIC.......... Wall max =   0.253651
+Timings{0}>                      Wall avg =   0.233627
+Timings{0}>                      Wall min =   0.188694
+Timings{0}> 
+Timings{0}> scatterAllReducePIC. Wall max =    1.96178
+Timings{0}>                      Wall avg =    1.52978
+Timings{0}>                      Wall min =    1.04598
+Timings{0}> 
+Timings{0}> GatherPIC........... Wall max =   0.133011
+Timings{0}>                      Wall avg =   0.122611
+Timings{0}>                      Wall min =  0.0923222
+Timings{0}> 
+Timings{0}> ScatterPIFNUFFT..... Wall max =    24.8863
+Timings{0}>                      Wall avg =    22.6871
+Timings{0}>                      Wall min =    15.6932
+Timings{0}> 
+Timings{0}> scatterAllReducePIF. Wall max =     33.513
+Timings{0}>                      Wall avg =    30.6141
+Timings{0}>                      Wall min =    20.8183
+Timings{0}> 
+Timings{0}> GatherPIFNUFFT...... Wall max =    25.1081
+Timings{0}>                      Wall avg =    22.8787
+Timings{0}>                      Wall min =    15.8091
+Timings{0}> 
+Timings{0}> ---------------------------------------------

@@ -1,0 +1,28 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/p/software/juwelsbooster/lmod/8.7.12/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ srun ./PenningTrapPinT 128 128 128 128 128 128 41943040 1.2 0.0001953125 0.003125 1e-11 1 B-spline 1 4 16 0.1 1e-7 PIC --info 5
+error: *** job 9848359 CANCELLED DUE TO TIME LIMIT ***
+error: *** step 9848359:0 CANCELLED DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 6 seconds for job step to finish.
+srun: error: jwb1030: tasks 16-19: Terminated
+srun: error: jwb1027: tasks 8-11: Terminated
+srun: error: jwb1046: tasks 48-51: Terminated
+srun: error: jwb1036: tasks 40-43: Terminated
+srun: error: jwb1026: tasks 4-7: Terminated
+srun: error: jwb1035: tasks 36-39: Terminated
+srun: error: jwb1032: tasks 24-27: Terminated
+srun: error: jwb1031: tasks 20-23: Terminated
+srun: error: jwb1034: tasks 32-35: Terminated
+srun: error: jwb1028: tasks 12-15: Terminated
+srun: error: jwb1050: tasks 56-59: Terminated
+srun: error: jwb1033: tasks 28-31: Terminated
+srun: error: jwb1049: tasks 52-55: Terminated
+srun: error: jwb1045: tasks 44-47: Terminated
+srun: error: jwb1051: tasks 60-63: Terminated
+srun: error: jwb1025: tasks 0-3: Terminated

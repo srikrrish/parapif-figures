@@ -1,0 +1,109 @@
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '2621440' is not parsed by Ippl. Make sure your application parses it.
+Option '19.2' is not parsed by Ippl. Make sure your application parses it.
+Option '0.05' is not parsed by Ippl. Make sure your application parses it.
+Option '0.4' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-5' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option 'B-spline' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option '2' is not parsed by Ippl. Make sure your application parses it.
+Option '16' is not parsed by Ippl. Make sure your application parses it.
+Option '0.1' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-4' is not parsed by Ippl. Make sure your application parses it.
+Option 'PIC' is not parsed by Ippl. Make sure your application parses it.
+PenningTrapPinT{31}> Parareal PenningTrapPinT
+PenningTrapPinT{31}> Slice dT: 1.2
+PenningTrapPinT{31}> No. of fine time steps: 24
+PenningTrapPinT{31}> No. of coarse time steps: 3
+PenningTrapPinT{31}> Tolerance: 1e-05 No. of cycles: 1
+PenningTrapPinT{31}> Np= 2621440 Fourier modes = ( 64 , 64 , 64 ) Grid points = ( 64 , 64 , 64 )
+PenningTrapPinT{31}> particles created and initial conditions assigned 
+PenningTrapPinT{31}> Finished iteration: 1 in cycle: 1 Rerror: 0.20504 Perror: 0.880977
+PenningTrapPinT{31}> Finished iteration: 2 in cycle: 1 Rerror: 0.143007 Perror: 0.686285
+PenningTrapPinT{31}> Finished iteration: 3 in cycle: 1 Rerror: 0.0801489 Perror: 0.423914
+PenningTrapPinT{31}> Finished iteration: 4 in cycle: 1 Rerror: 0.0315447 Perror: 0.179736
+PenningTrapPinT{31}> Finished iteration: 5 in cycle: 1 Rerror: 0.0138811 Perror: 0.0920591
+PenningTrapPinT{31}> Finished iteration: 6 in cycle: 1 Rerror: 0.0104717 Perror: 0.0690819
+PenningTrapPinT{31}> Finished iteration: 7 in cycle: 1 Rerror: 0.00708218 Perror: 0.0487274
+PenningTrapPinT{31}> Finished iteration: 8 in cycle: 1 Rerror: 0.00293839 Perror: 0.0220104
+PenningTrapPinT{31}> Finished iteration: 9 in cycle: 1 Rerror: 0.00139079 Perror: 0.0189461
+PenningTrapPinT{31}> Finished iteration: 10 in cycle: 1 Rerror: 0.000888012 Perror: 0.016035
+PenningTrapPinT{31}> Finished iteration: 11 in cycle: 1 Rerror: 0.000753657 Perror: 0.010761
+PenningTrapPinT{31}> Finished iteration: 12 in cycle: 1 Rerror: 0.000680305 Perror: 0.00651058
+PenningTrapPinT{31}> Finished iteration: 13 in cycle: 1 Rerror: 0.000342506 Perror: 0.00773411
+PenningTrapPinT{31}> Finished iteration: 14 in cycle: 1 Rerror: 4.99202e-05 Perror: 0.000330253
+PenningTrapPinT{31}> Finished iteration: 15 in cycle: 1 Rerror: 1.28782e-05 Perror: 9.16762e-05
+PenningTrapPinT{31}> Finished iteration: 16 in cycle: 1 Rerror: 3.6262e-17 Perror: 2.49132e-16
+PenningTrapPinT{31}> PenningTrapPinT Parareal: End.
+Timings{0}> ---------------------------------------------
+Timings{0}>      Timing results for 32 ranks:
+Timings{0}> ---------------------------------------------
+Timings{0}> mainTimer........... Wall tot =    10.1257
+Timings{0}> 
+Timings{0}> particlesCreation... Wall max =    1.62348
+Timings{0}>                      Wall avg =   0.894898
+Timings{0}>                      Wall min =   0.120886
+Timings{0}> 
+Timings{0}> timeCommunication... Wall max =    2.19036
+Timings{0}>                      Wall avg =    1.07369
+Timings{0}>                      Wall min =   0.105902
+Timings{0}> 
+Timings{0}> deepCopy............ Wall max = 0.00847817
+Timings{0}>                      Wall avg = 0.00470279
+Timings{0}>                      Wall min = 0.000813334
+Timings{0}> 
+Timings{0}> finePropagator...... Wall max =    7.53928
+Timings{0}>                      Wall avg =    4.17193
+Timings{0}>                      Wall min =   0.515385
+Timings{0}> 
+Timings{0}> coarsePropagator.... Wall max =   0.340731
+Timings{0}>                      Wall avg =   0.210525
+Timings{0}>                      Wall min =  0.0474426
+Timings{0}> 
+Timings{0}> dumpData............ Wall max = 0.00114291
+Timings{0}>                      Wall avg = 0.000602784
+Timings{0}>                      Wall min =  7.535e-05
+Timings{0}> 
+Timings{0}> computeErrors....... Wall max = 0.00410066
+Timings{0}>                      Wall avg = 0.00196527
+Timings{0}>                      Wall min = 0.000325712
+Timings{0}> 
+Timings{0}> initializeShapeFunc. Wall max = 0.000127361
+Timings{0}>                      Wall avg = 0.000109305
+Timings{0}>                      Wall min =  9.925e-05
+Timings{0}> 
+Timings{0}> fieldSolvePIC....... Wall max =  0.0827575
+Timings{0}>                      Wall avg =  0.0466708
+Timings{0}>                      Wall min =  0.0107135
+Timings{0}> 
+Timings{0}> ScatterPIC.......... Wall max =  0.0277362
+Timings{0}>                      Wall avg =  0.0157505
+Timings{0}>                      Wall min = 0.00502955
+Timings{0}> 
+Timings{0}> scatterAllReducePIC. Wall max =   0.179837
+Timings{0}>                      Wall avg =   0.104921
+Timings{0}>                      Wall min =  0.0193938
+Timings{0}> 
+Timings{0}> GatherPIC........... Wall max =  0.0152345
+Timings{0}>                      Wall avg = 0.00833835
+Timings{0}>                      Wall min = 0.00194191
+Timings{0}> 
+Timings{0}> ScatterPIFNUFFT..... Wall max =    2.28531
+Timings{0}>                      Wall avg =    1.23335
+Timings{0}>                      Wall min =   0.157519
+Timings{0}> 
+Timings{0}> scatterAllReducePIF. Wall max =    2.80874
+Timings{0}>                      Wall avg =     1.5448
+Timings{0}>                      Wall min =   0.176156
+Timings{0}> 
+Timings{0}> GatherPIFNUFFT...... Wall max =    2.41791
+Timings{0}>                      Wall avg =    1.27433
+Timings{0}>                      Wall min =   0.156901
+Timings{0}> 
+Timings{0}> ---------------------------------------------

@@ -1,0 +1,329 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/p/software/juwelsbooster/lmod/8.7.12/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ srun ./BumponTailInstabilityPinT 128 128 128 128 128 128 20971520 19.2 0.003125 0.05 1e-8 1 B-spline 7 32 8 0.0001 1e-7 PIF --info 5
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+srun: error: jwb0328: tasks 28-31: Aborted
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:117: pscom_con_terminate_recvq: Assertion `con->magic == MAGIC_CONNECTION' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+BumponTailInstabilityPinT: /dev/shm/swmanage/juwelsbooster/pscom/5-default/GCCcore-12.3.0/pscom-5.7.0-1/lib/pscom/pscom_con.c:137: pscom_con_terminate_recvq: Assertion `sock->magic == MAGIC_SOCKET' failed.
+srun: error: jwb0324: tasks 12-15: Aborted
+srun: error: jwb0327: tasks 24-27: Aborted
+srun: error: jwb0322: tasks 4-7: Aborted
+srun: error: jwb0325: tasks 16-19: Aborted
+srun: error: jwb0348: tasks 72-75: Aborted
+srun: error: jwb1209: tasks 176-179: Aborted
+srun: error: jwb0326: tasks 20-23: Aborted
+srun: error: jwb0323: tasks 8-11: Aborted
+srun: error: jwb1192: tasks 144-147: Aborted
+srun: error: jwb0349: tasks 76-79: Aborted
+srun: error: jwb1155: tasks 92-95: Aborted
+srun: error: jwb1178: tasks 132-135: Aborted
+srun: error: jwb0352: tasks 88-91: Aborted
+srun: error: jwb1245: tasks 240-243: Aborted
+srun: error: jwb1193: tasks 148-151: Aborted
+srun: error: jwb0344: tasks 60-63: Aborted
+srun: error: jwb1195: tasks 152-155: Aborted
+srun: error: jwb1248: tasks 252-255: Aborted
+srun: error: jwb1227: tasks 204-207: Aborted
+srun: error: jwb1210: tasks 180-183: Aborted
+srun: error: jwb0332: tasks 44-47: Aborted
+srun: error: jwb0342: tasks 52-55: Aborted
+srun: error: jwb1205: tasks 160-163: Aborted
+srun: error: jwb1185: tasks 140-143: Aborted
+srun: error: jwb1206: tasks 164-167: Aborted
+srun: error: jwb1215: tasks 192-195: Aborted
+srun: error: jwb1196: tasks 156-159: Aborted
+srun: error: jwb0345: tasks 64-67: Aborted
+srun: error: jwb0330: tasks 36-39: Aborted
+srun: error: jwb1238: tasks 216-219: Aborted
+srun: error: jwb1239: tasks 220-223: Aborted
+srun: error: jwb1225: tasks 200-203: Aborted
+srun: error: jwb1247: tasks 248-251: Aborted
+srun: error: jwb1163: tasks 116-119: Aborted
+srun: error: jwb1211: tasks 184-187: Aborted
+srun: error: jwb0351: tasks 84-87: Aborted
+srun: error: jwb0341: tasks 48-51: Aborted
+srun: error: jwb1246: tasks 244-247: Aborted
+srun: error: jwb0343: tasks 56-59: Aborted
+srun: error: jwb1157: tasks 100-103: Aborted
+srun: error: jwb1177: tasks 128-131: Aborted
+srun: error: jwb1244: tasks 236-239: Aborted
+srun: error: jwb0329: tasks 32-35: Aborted
+srun: error: jwb1208: tasks 172-175: Aborted
+srun: error: jwb1176: tasks 124-127: Aborted
+srun: error: jwb1243: tasks 232-235: Aborted
+srun: error: jwb0350: tasks 80-83: Aborted
+srun: error: jwb0331: tasks 40-43: Aborted
+srun: error: jwb1207: tasks 168-171: Aborted
+srun: error: jwb1161: tasks 112-115: Aborted
+srun: error: jwb1237: tasks 212-215: Aborted
+srun: error: jwb1160: tasks 108-111: Aborted
+srun: error: jwb1183: tasks 136-139: Aborted
+srun: error: jwb1241: tasks 224-227: Aborted
+srun: error: jwb0346: tasks 68-71: Aborted
+srun: error: jwb1156: tasks 96-99: Aborted
+srun: error: jwb1228: tasks 208-211: Aborted
+srun: error: jwb1242: tasks 228-231: Aborted
+srun: error: jwb1173: tasks 120-123: Aborted
+srun: error: jwb1158: tasks 104-107: Aborted
+srun: error: jwb1216: tasks 196-199: Aborted
+srun: error: jwb1214: tasks 188-191: Aborted
+srun: error: jwb0321: tasks 0-3: Aborted

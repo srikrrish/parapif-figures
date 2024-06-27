@@ -1,0 +1,44 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/p/software/juwelsbooster/lmod/8.7.12/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ srun ./LandauDampingPinT 128 128 128 128 128 128 20971520 19.2 0.003125 0.1 1e-8 1 B-spline 1 8 16 0.001 1e-7 PIF --info 5
+srun: Job step aborted: Waiting up to 6 seconds for job step to finish.
+error: *** step 9749390:0 CANCELLED DUE TO TIME LIMIT ***
+srun: error: jwb0683: tasks 32-35: Terminated
+srun: error: jwb0674: tasks 4-7: Terminated
+srun: error: jwb0694: tasks 44-47: Terminated
+srun: error: jwb0682: tasks 28-31: Terminated
+srun: error: jwb0697: tasks 56-59: Terminated
+srun: error: jwb0888: tasks 108-111: Terminated
+srun: error: jwb0681: tasks 24-27: Terminated
+srun: error: jwb0699: tasks 64-67: Terminated
+srun: error: jwb0677: tasks 16-19: Terminated
+srun: error: jwb0875: tasks 100-103: Terminated
+srun: error: jwb0675: tasks 8-11: Terminated
+srun: error: jwb0702: tasks 76-79: Terminated
+srun: error: jwb0693: tasks 40-43: Terminated
+srun: error: jwb0887: tasks 104-107: Terminated
+srun: error: jwb0679: tasks 20-23: Terminated
+srun: error: jwb0684: tasks 36-39: Terminated
+srun: error: jwb0890: tasks 112-115: Terminated
+srun: error: jwb0698: tasks 60-63: Terminated
+srun: error: jwb0695: tasks 48-51: Terminated
+srun: error: jwb0696: tasks 52-55: Terminated
+srun: error: jwb0701: tasks 72-75: Terminerror: *** job 9749390 CANCELLED DUE TO TIME LIMIT ***
+ated
+srun: error: jwb0893: tasks 124-127: Terminated
+srun: error: jwb0676: tasks 12-15: Terminated
+srun: error: jwb0700: tasks 68-71: Terminated
+srun: error: jwb0870: tasks 88-91: Terminated
+srun: error: jwb0892: tasks 120-123: Terminated
+srun: error: jwb0891: tasks 116-119: Terminated
+srun: error: jwb0873: tasks 96-99: Terminated
+srun: error: jwb0871: tasks 92-95: Terminated
+srun: error: jwb0869: tasks 84-87: Terminated
+srun: error: jwb0704: tasks 80-83: Terminated
+srun: error: jwb0673: tasks 0-3: Terminated

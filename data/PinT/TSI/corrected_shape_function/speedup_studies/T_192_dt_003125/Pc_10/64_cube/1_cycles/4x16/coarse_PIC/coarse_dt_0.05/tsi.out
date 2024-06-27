@@ -1,0 +1,102 @@
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '64' is not parsed by Ippl. Make sure your application parses it.
+Option '2621440' is not parsed by Ippl. Make sure your application parses it.
+Option '19.2' is not parsed by Ippl. Make sure your application parses it.
+Option '0.003125' is not parsed by Ippl. Make sure your application parses it.
+Option '0.05' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-8' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option 'B-spline' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option '4' is not parsed by Ippl. Make sure your application parses it.
+Option '16' is not parsed by Ippl. Make sure your application parses it.
+Option '0.1' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-7' is not parsed by Ippl. Make sure your application parses it.
+Option 'PIC' is not parsed by Ippl. Make sure your application parses it.
+TwoStreamInstability{63}> Parareal TwoStreamInstability
+TwoStreamInstability{63}> Slice dT: 1.2
+TwoStreamInstability{63}> No. of fine time steps: 384
+TwoStreamInstability{63}> No. of coarse time steps: 24
+TwoStreamInstability{63}> Tolerance: 1e-08 No. of cycles: 1
+TwoStreamInstability{63}> Np= 2621440 Fourier modes = ( 64 , 64 , 64 ) Grid points = ( 64 , 64 , 64 )
+TwoStreamInstability{63}> particles created and initial conditions assigned 
+TwoStreamInstability{63}> Finished iteration: 1 in cycle: 1 Rerror: 0.0225349 Perror: 0.0904289
+TwoStreamInstability{63}> Finished iteration: 2 in cycle: 1 Rerror: 0.00796702 Perror: 0.0340407
+TwoStreamInstability{63}> Finished iteration: 3 in cycle: 1 Rerror: 0.00169749 Perror: 0.00776267
+TwoStreamInstability{63}> Finished iteration: 4 in cycle: 1 Rerror: 0.000223979 Perror: 0.00108895
+TwoStreamInstability{63}> Finished iteration: 5 in cycle: 1 Rerror: 2.01764e-05 Perror: 0.000103494
+TwoStreamInstability{63}> Finished iteration: 6 in cycle: 1 Rerror: 1.31901e-06 Perror: 7.00495e-06
+TwoStreamInstability{63}> Finished iteration: 7 in cycle: 1 Rerror: 6.76963e-08 Perror: 3.71386e-07
+TwoStreamInstability{63}> Finished iteration: 8 in cycle: 1 Rerror: 2.82345e-09 Perror: 1.59262e-08
+TwoStreamInstability{63}> Finished iteration: 9 in cycle: 1 Rerror: 2.61861e-17 Perror: 1.57877e-16
+TwoStreamInstability{63}> TwoStreamInstability Parareal: End.
+Timings{0}> ---------------------------------------------
+Timings{0}>      Timing results for 64 ranks:
+Timings{0}> ---------------------------------------------
+Timings{0}> mainTimer........... Wall tot =    157.802
+Timings{0}> 
+Timings{0}> particlesCreation... Wall max =    3.13784
+Timings{0}>                      Wall avg =    1.69666
+Timings{0}>                      Wall min =   0.218588
+Timings{0}> 
+Timings{0}> timeCommunication... Wall max =     15.254
+Timings{0}>                      Wall avg =    4.44848
+Timings{0}>                      Wall min =  0.0910206
+Timings{0}> 
+Timings{0}> deepCopy............ Wall max = 0.00323367
+Timings{0}>                      Wall avg = 0.00222438
+Timings{0}>                      Wall min = 0.000523574
+Timings{0}> 
+Timings{0}> finePropagator...... Wall max =    141.553
+Timings{0}>                      Wall avg =    100.112
+Timings{0}>                      Wall min =    17.5568
+Timings{0}> 
+Timings{0}> coarsePropagator.... Wall max =   0.925561
+Timings{0}>                      Wall avg =   0.633369
+Timings{0}>                      Wall min =   0.220657
+Timings{0}> 
+Timings{0}> dumpData............ Wall max = 0.00970635
+Timings{0}>                      Wall avg = 0.00638391
+Timings{0}>                      Wall min = 0.00100919
+Timings{0}> 
+Timings{0}> computeErrors....... Wall max = 0.00302168
+Timings{0}>                      Wall avg = 0.00137051
+Timings{0}>                      Wall min = 0.000293393
+Timings{0}> 
+Timings{0}> initializeShapeFunc. Wall max =  0.0001303
+Timings{0}>                      Wall avg = 0.000111321
+Timings{0}>                      Wall min = 0.000102321
+Timings{0}> 
+Timings{0}> fieldSolvePIC....... Wall max =     0.3987
+Timings{0}>                      Wall avg =   0.275851
+Timings{0}>                      Wall min =  0.0855886
+Timings{0}> 
+Timings{0}> ScatterPIC.......... Wall max =  0.0435095
+Timings{0}>                      Wall avg =  0.0283866
+Timings{0}>                      Wall min = 0.00866732
+Timings{0}> 
+Timings{0}> scatterAllReducePIC. Wall max =   0.350378
+Timings{0}>                      Wall avg =   0.229878
+Timings{0}>                      Wall min =  0.0775205
+Timings{0}> 
+Timings{0}> GatherPIC........... Wall max =  0.0476314
+Timings{0}>                      Wall avg =  0.0327142
+Timings{0}>                      Wall min =  0.0101674
+Timings{0}> 
+Timings{0}> ScatterPIFNUFFT..... Wall max =    41.8324
+Timings{0}>                      Wall avg =    30.2197
+Timings{0}>                      Wall min =     5.3854
+Timings{0}> 
+Timings{0}> scatterAllReducePIF. Wall max =     33.889
+Timings{0}>                      Wall avg =    21.5129
+Timings{0}>                      Wall min =    3.83241
+Timings{0}> 
+Timings{0}> GatherPIFNUFFT...... Wall max =     66.846
+Timings{0}>                      Wall avg =    47.7254
+Timings{0}>                      Wall min =     8.2049
+Timings{0}> 
+Timings{0}> ---------------------------------------------

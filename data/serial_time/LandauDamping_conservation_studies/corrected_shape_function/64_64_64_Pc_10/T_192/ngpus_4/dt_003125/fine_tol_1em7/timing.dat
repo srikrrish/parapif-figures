@@ -1,0 +1,16 @@
+                  num Ranks  Wall tot
+=====================================
+mainTimer...........      4       273
+
+                  num Ranks  Wall max  Wall min  Wall avg
+=========================================================
+mainTimer...........      4       273       273       273
+particlesCreation...      4   0.02532   0.01922   0.02304
+dumpData............      4     16.04     6.153     12.09
+kick................      4    0.4758    0.4591    0.4666
+drift...............      4    0.2241    0.2179    0.2202
+particleBC..........      4    0.4451     0.441    0.4422
+initializeShapeFunc.      4  0.000129 9.241e-05 0.0001093
+ScatterPIFNUFFT.....      4     73.73      73.5     73.59
+scatterAllReducePIF.      4     59.59     49.99     53.84
+GatherPIFNUFFT......      4     131.5     130.8     131.2

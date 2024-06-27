@@ -1,0 +1,80 @@
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '20971520' is not parsed by Ippl. Make sure your application parses it.
+Option '19.2' is not parsed by Ippl. Make sure your application parses it.
+Option '0.003125' is not parsed by Ippl. Make sure your application parses it.
+Option '0.05' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-8' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option 'B-spline' is not parsed by Ippl. Make sure your application parses it.
+Option '7' is not parsed by Ippl. Make sure your application parses it.
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '4' is not parsed by Ippl. Make sure your application parses it.
+Option '0.001' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-7' is not parsed by Ippl. Make sure your application parses it.
+Option 'PIF' is not parsed by Ippl. Make sure your application parses it.
+LandauDampingPinT{127}> Parareal LandauDampingPinT
+LandauDampingPinT{127}> Slice dT: 4.8
+LandauDampingPinT{127}> No. of fine time steps: 1536
+LandauDampingPinT{127}> No. of coarse time steps: 96
+LandauDampingPinT{127}> Tolerance: 1e-08 No. of cycles: 1
+LandauDampingPinT{127}> Np= 20971520 Fourier modes = ( 128 , 128 , 128 ) Grid points = ( 128 , 128 , 128 )
+LandauDampingPinT{127}> particles created and initial conditions assigned 
+LandauDampingPinT{127}> Finished iteration: 1 in cycle: 1 Rerror: 3.44456e-05 Perror: 1.75039e-05
+LandauDampingPinT{127}> Finished iteration: 2 in cycle: 1 Rerror: 1.00784e-07 Perror: 8.00322e-08
+LandauDampingPinT{127}> Finished iteration: 3 in cycle: 1 Rerror: 3.25084e-10 Perror: 3.45046e-10
+LandauDampingPinT{127}> LandauDampingPinT Parareal: End.
+Timings{0}> ---------------------------------------------
+Timings{0}>      Timing results for 128 ranks:
+Timings{0}> ---------------------------------------------
+Timings{0}> mainTimer........... Wall tot =    536.742
+Timings{0}> 
+Timings{0}> particlesCreation... Wall max =    22.1504
+Timings{0}>                      Wall avg =    13.8925
+Timings{0}>                      Wall min =    5.57196
+Timings{0}> 
+Timings{0}> timeCommunication... Wall max =    17.5357
+Timings{0}>                      Wall avg =    8.97584
+Timings{0}>                      Wall min =   0.181603
+Timings{0}> 
+Timings{0}> deepCopy............ Wall max = 0.00132976
+Timings{0}>                      Wall avg = 0.000991475
+Timings{0}>                      Wall min = 0.000528134
+Timings{0}> 
+Timings{0}> finePropagator...... Wall max =    497.092
+Timings{0}>                      Wall avg =     372.77
+Timings{0}>                      Wall min =    165.298
+Timings{0}> 
+Timings{0}> coarsePropagator.... Wall max =     21.605
+Timings{0}>                      Wall avg =    17.5519
+Timings{0}>                      Wall min =    10.8036
+Timings{0}> 
+Timings{0}> dumpData............ Wall max =  0.0131935
+Timings{0}>                      Wall avg = 0.00957588
+Timings{0}>                      Wall min = 0.00392327
+Timings{0}> 
+Timings{0}> computeErrors....... Wall max = 0.00900654
+Timings{0}>                      Wall avg = 0.00353304
+Timings{0}>                      Wall min = 0.000356681
+Timings{0}> 
+Timings{0}> initializeShapeFunc. Wall max = 0.000343672
+Timings{0}>                      Wall avg = 0.000315549
+Timings{0}>                      Wall min = 0.00030734
+Timings{0}> 
+Timings{0}> ScatterPIFNUFFT..... Wall max =     156.49
+Timings{0}>                      Wall avg =    117.343
+Timings{0}>                      Wall min =    52.4513
+Timings{0}> 
+Timings{0}> scatterAllReducePIF. Wall max =    195.368
+Timings{0}>                      Wall avg =    147.208
+Timings{0}>                      Wall min =    67.0893
+Timings{0}> 
+Timings{0}> GatherPIFNUFFT...... Wall max =    165.581
+Timings{0}>                      Wall avg =    124.319
+Timings{0}>                      Wall min =    55.7693
+Timings{0}> 
+Timings{0}> ---------------------------------------------

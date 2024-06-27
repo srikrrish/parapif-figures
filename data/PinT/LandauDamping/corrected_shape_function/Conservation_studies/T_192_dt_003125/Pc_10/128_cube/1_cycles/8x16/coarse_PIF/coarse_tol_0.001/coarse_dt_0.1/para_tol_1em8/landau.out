@@ -1,0 +1,31 @@
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '128' is not parsed by Ippl. Make sure your application parses it.
+Option '20971520' is not parsed by Ippl. Make sure your application parses it.
+Option '19.2' is not parsed by Ippl. Make sure your application parses it.
+Option '0.003125' is not parsed by Ippl. Make sure your application parses it.
+Option '0.1' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-8' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option 'B-spline' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option '8' is not parsed by Ippl. Make sure your application parses it.
+Option '16' is not parsed by Ippl. Make sure your application parses it.
+Option '0.001' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-7' is not parsed by Ippl. Make sure your application parses it.
+Option 'PIF' is not parsed by Ippl. Make sure your application parses it.
+LandauDampingPinT{127}> Parareal LandauDampingPinT
+LandauDampingPinT{127}> Slice dT: 1.2
+LandauDampingPinT{127}> No. of fine time steps: 384
+LandauDampingPinT{127}> No. of coarse time steps: 12
+LandauDampingPinT{127}> Tolerance: 1e-08 No. of cycles: 1
+LandauDampingPinT{127}> Np= 20971520 Fourier modes = ( 128 , 128 , 128 ) Grid points = ( 128 , 128 , 128 )
+LandauDampingPinT{127}> particles created and initial conditions assigned 
+LandauDampingPinT{127}> Finished iteration: 1 in cycle: 1 Rerror: 0.00219868 Perror: 0.00166906
+LandauDampingPinT{127}> Finished iteration: 2 in cycle: 1 Rerror: 0.00030728 Perror: 0.00040445
+LandauDampingPinT{127}> Finished iteration: 3 in cycle: 1 Rerror: 2.18568e-05 Perror: 4.02999e-05
+LandauDampingPinT{127}> Finished iteration: 4 in cycle: 1 Rerror: 9.59247e-07 Perror: 2.19226e-06
+LandauDampingPinT{127}> Finished iteration: 5 in cycle: 1 Rerror: 2.9093e-08 Perror: 7.72157e-08

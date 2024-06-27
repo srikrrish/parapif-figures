@@ -1,0 +1,18 @@
+                  num Ranks  Wall tot
+=====================================
+mainTimer...........   1536       103
+
+                  num Ranks  Wall max  Wall min  Wall avg
+=========================================================
+mainTimer...........   1536       103       103       103
+particlesCreation...   1536     30.69    0.6922      15.8
+timeCommunication...   1536     30.18    0.1379     15.36
+deepCopy............   1536   0.00202 0.0005345  0.001539
+finePropagator......   1536      69.7     14.06      51.5
+coarsePropagator....   1536     3.086     1.086     2.439
+dumpData............   1536  0.001883 0.0003352  0.001332
+computeErrors.......   1536   0.01392 0.0003577  0.005271
+initializeShapeFunc.   1536 0.0003424 0.0003075 0.0003169
+ScatterPIFNUFFT.....   1536     21.93     4.433     16.16
+scatterAllReducePIF.   1536     27.51     5.941     20.48
+GatherPIFNUFFT......   1536     23.16     4.707      17.1

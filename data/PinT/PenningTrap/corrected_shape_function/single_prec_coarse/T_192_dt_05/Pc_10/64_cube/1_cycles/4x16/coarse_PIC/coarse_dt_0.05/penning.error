@@ -1,0 +1,857 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/p/software/juwelsbooster/lmod/8.7.12/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ srun ./PenningTrapPinT 64 64 64 64 64 64 2621440 19.2 0.05 0.05 1e-5 1 B-spline 1 4 16 0.000001 1e-4 PIC --info 5
+[jwb1099:14494:0:14494] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0600:7303 :0:7303] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0479:18874:0:18874] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0608:29450:0:29450] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0580:30078:0:30078] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0606:13381:0:13381] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0605:15447:0:15447] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0587:29066:0:29066] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0477:11770:0:11770] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0059:1537 :0:1537] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0059:1484 :0:1484] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0059:1355 :0:1355] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1147:29613:0:29613] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0059:1604 :0:1604] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1090:22161:0:22161] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1096:12102:0:12102] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0604:10502:0:10502] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0579:10735:0:10735] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1098:6935 :0:6935] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:   1537) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000000:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000000:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14cc7d3234e4]>
+<PSP:r0000000:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14cc7f4ebcf0]>
+<PSP:r0000000:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000000:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14cc7eba3d85]>
+<PSP:r0000000:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:   1484) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000001:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000001:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14a7f0fbb4e4]>
+<PSP:r0000001:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14a7f3183cf0]>
+<PSP:r0000001:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000001:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14a7f283bd85]>
+<PSP:r0000001:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:   1355) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:   1604) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000003:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000003:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x145f2ece94e4]>
+<PSP:r0000003:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x145f30eb1cf0]>
+<PSP:r0000003:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000003:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x145f30569d85]>
+<PSP:r0000003:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000002:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000002:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x154ad0bbe4e4]>
+<PSP:r0000002:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x154ad2d86cf0]>
+<PSP:r0000002:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000002:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x154ad243ed85]>
+<PSP:r0000002:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+[jwb0600:7248 :0:7248] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0479:18827:0:18827] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0600:7355 :0:7355] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0479:18725:0:18725] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1099:14593:0:14593] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0600:7402 :0:7402] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0479:18777:0:18777] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1099:14546:0:14546] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:   7402) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  18827) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+[jwb1099:14445:0:14445] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+<PSP:r0000027:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000027:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x146a50dc84e4]>
+<PSP:r0000027:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x146a52f90cf0]>
+<PSP:r0000027:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000027:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x146a52648d85]>
+<PSP:r0000027:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000008:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000008:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x154a6df9f4e4]>
+<PSP:r0000008:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x154a70167cf0]>
+<PSP:r0000008:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000008:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x154a6f81fd85]>
+<PSP:r0000008:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  14445) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:   7355) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  18725) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000057:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000057:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x153c1c3184e4]>
+<PSP:r0000057:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x153c1e4e0cf0]>
+<PSP:r0000057:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000057:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x153c1db98d85]>
+<PSP:r0000057:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000024:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000024:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x15451d1e34e4]>
+<PSP:r0000024:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x15451f3abcf0]>
+<PSP:r0000024:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000024:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x15451ea63d85]>
+<PSP:r0000024:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000009:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000009:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1527f6d8a4e4]>
+<PSP:r0000009:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1527f8f52cf0]>
+<PSP:r0000009:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000009:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1527f860ad85]>
+<PSP:r0000009:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  14494) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:   7248) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  18777) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000056:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000056:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14c0401ff4e4]>
+<PSP:r0000056:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14c0423c7cf0]>
+<PSP:r0000056:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000056:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14c041a7fd85]>
+<PSP:r0000056:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:   7303) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  18874) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  14546) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000026:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000026:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14c2319d14e4]>
+<PSP:r0000026:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14c233b99cf0]>
+<PSP:r0000026:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000026:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14c233251d85]>
+<PSP:r0000026:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000010:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000010:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14faab8234e4]>
+<PSP:r0000010:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14faad9ebcf0]>
+<PSP:r0000010:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000010:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14faad0a3d85]>
+<PSP:r0000010:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  14593) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000025:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000025:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1507927934e4]>
+<PSP:r0000025:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x15079495bcf0]>
+<PSP:r0000025:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000025:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x150794013d85]>
+<PSP:r0000025:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000011:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000011:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x15269e3bd4e4]>
+<PSP:r0000011:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1526a0585cf0]>
+<PSP:r0000011:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000011:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x15269fc3dd85]>
+<PSP:r0000011:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000058:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000058:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x149344ea64e4]>
+<PSP:r0000058:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14934706ecf0]>
+<PSP:r0000058:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000058:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x149346726d85]>
+<PSP:r0000058:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000059:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000059:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x150e0c5cf4e4]>
+<PSP:r0000059:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x150e0e797cf0]>
+<PSP:r0000059:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000059:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x150e0de4fd85]>
+<PSP:r0000059:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+[jwb0606:13430:0:13430] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0606:13331:0:13331] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0606:13486:0:13486] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  13331) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000036:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000036:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14eed6e0e4e4]>
+<PSP:r0000036:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14eed8fd6cf0]>
+<PSP:r0000036:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000036:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14eed868ed85]>
+<PSP:r0000036:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  13430) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000038:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000038:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1500e01654e4]>
+<PSP:r0000038:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1500e232dcf0]>
+<PSP:r0000038:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000038:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1500e19e5d85]>
+<PSP:r0000038:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  13381) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  13486) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000039:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000039:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14672207c4e4]>
+<PSP:r0000039:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x146724244cf0]>
+<PSP:r0000039:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000039:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1467238fcd85]>
+<PSP:r0000039:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000037:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000037:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1463deb464e4]>
+<PSP:r0000037:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1463e0d0ecf0]>
+<PSP:r0000037:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000037:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1463e03c6d85]>
+<PSP:r0000037:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+[jwb0477:11820:0:11820] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0580:30031:0:30031] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1090:22015:0:22015] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0587:28967:0:28967] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1096:12054:0:12054] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0608:29597:0:29597] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0477:11867:0:11867] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0604:10455:0:10455] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0605:15397:0:15397] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0580:29982:0:29982] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1147:29517:0:29517] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1090:22065:0:22065] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0587:29018:0:29018] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1096:12152:0:12152] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0608:29500:0:29500] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0477:11720:0:11720] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0604:10353:0:10353] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0605:15495:0:15495] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0580:29932:0:29932] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1147:29567:0:29567] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1090:22114:0:22114] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0587:28919:0:28919] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1096:12004:0:12004] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0608:29549:0:29549] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  11720) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+[jwb0604:10403:0:10403] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0605:15552:0:15552] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  30031) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+[jwb1147:29467:0:29467] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  22114) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  29066) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  12152) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  29597) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000005:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000005:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14cdc663b4e4]>
+<PSP:r0000005:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14cdc8803cf0]>
+<PSP:r0000005:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000005:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14cdc7ebbd85]>
+<PSP:r0000005:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  10502) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  15397) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000019:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000019:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14bd598204e4]>
+<PSP:r0000019:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14bd5b9e8cf0]>
+<PSP:r0000019:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000019:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14bd5b0a0d85]>
+<PSP:r0000019:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  29517) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  22161) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000021:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000021:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14f279dab4e4]>
+<PSP:r0000021:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14f27bf73cf0]>
+<PSP:r0000021:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000021:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14f27b62bd85]>
+<PSP:r0000021:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000050:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000050:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1463839a54e4]>
+<PSP:r0000050:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x146385b6dcf0]>
+<PSP:r0000050:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000050:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x146385225d85]>
+<PSP:r0000050:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  29500) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  11770) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000028:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000028:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1539bafdc4e4]>
+<PSP:r0000028:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1539bd1a4cf0]>
+<PSP:r0000028:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000028:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1539bc85cd85]>
+<PSP:r0000028:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000033:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000033:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1528ef3114e4]>
+<PSP:r0000033:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1528f14d9cf0]>
+<PSP:r0000033:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000033:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1528f0b91d85]>
+<PSP:r0000033:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  29982) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  29613) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000046:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000046:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x15086c06d4e4]>
+<PSP:r0000046:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x15086e235cf0]>
+<PSP:r0000046:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000046:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x15086d8edd85]>
+<PSP:r0000046:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  29018) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  12054) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000040:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000040:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x147f811e94e4]>
+<PSP:r0000040:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x147f833b1cf0]>
+<PSP:r0000040:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000040:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x147f82a69d85]>
+<PSP:r0000040:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000007:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000007:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1482943544e4]>
+<PSP:r0000007:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14829651ccf0]>
+<PSP:r0000007:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000007:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x148295bd4d85]>
+<PSP:r0000007:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  10403) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  15447) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000017:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000017:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x146e86a754e4]>
+<PSP:r0000017:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x146e88c3dcf0]>
+<PSP:r0000017:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000017:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x146e882f5d85]>
+<PSP:r0000017:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000063:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000063:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x151eeb7634e4]>
+<PSP:r0000063:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x151eed92bcf0]>
+<PSP:r0000063:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000063:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x151eecfe3d85]>
+<PSP:r0000063:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000047:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000047:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x151354c4d4e4]>
+<PSP:r0000047:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x151356e15cf0]>
+<PSP:r0000047:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000047:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1513564cdd85]>
+<PSP:r0000047:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000022:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000022:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14aaf785c4e4]>
+<PSP:r0000022:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14aaf9a2ecf0]>
+<PSP:r0000022:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000022:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14aaf90e6d85]>
+<PSP:r0000022:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000051:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000051:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1534316ee4e4]>
+<PSP:r0000051:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1534338b6cf0]>
+<PSP:r0000051:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000051:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x153432f6ed85]>
+<PSP:r0000051:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000041:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000041:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14694110f4e4]>
+<PSP:r0000041:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1469432d7cf0]>
+<PSP:r0000041:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000041:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14694298fd85]>
+<PSP:r0000041:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  11867) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  10353) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000034:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000034:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14ae67b454e4]>
+<PSP:r0000034:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14ae69d0dcf0]>
+<PSP:r0000034:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000034:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14ae693c5d85]>
+<PSP:r0000034:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  29932) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000062:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000062:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14eb0fe774e4]>
+<PSP:r0000062:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14eb1203fcf0]>
+<PSP:r0000062:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000062:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14eb116f7d85]>
+<PSP:r0000062:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  22015) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  28967) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  12004) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  29549) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  11820) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  10455) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  15552) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  30078) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  29467) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  22065) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  28919) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  12102) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  29450) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000004:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000004:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1516075ca4e4]>
+<PSP:r0000004:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x151609792cf0]>
+<PSP:r0000004:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000004:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x151608e4ad85]>
+<PSP:r0000004:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000029:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000029:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x152e0cf754e4]>
+<PSP:r0000029:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x152e0f13dcf0]>
+<PSP:r0000029:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000029:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x152e0e7f5d85]>
+<PSP:r0000029:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  15495) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000016:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000016:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14b52ce554e4]>
+<PSP:r0000016:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14b52f01dcf0]>
+<PSP:r0000016:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000016:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14b52e6d5d85]>
+<PSP:r0000016:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  29567) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000044:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000044:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x152df25a64e4]>
+<PSP:r0000044:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x152df4778cf0]>
+<PSP:r0000044:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000044:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x152df3e30d85]>
+<PSP:r0000044:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000023:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000023:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x145681be94e4]>
+<PSP:r0000023:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x145683db1cf0]>
+<PSP:r0000023:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000023:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x145683469d85]>
+<PSP:r0000023:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000048:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000048:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1475f2d924e4]>
+<PSP:r0000048:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1475f4f5acf0]>
+<PSP:r0000048:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000048:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1475f4612d85]>
+<PSP:r0000048:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000042:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000042:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14c237da04e4]>
+<PSP:r0000042:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14c239f68cf0]>
+<PSP:r0000042:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000042:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14c239620d85]>
+<PSP:r0000042:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000006:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000006:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1458cf78d4e4]>
+<PSP:r0000006:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1458d1955cf0]>
+<PSP:r0000006:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000006:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1458d100dd85]>
+<PSP:r0000006:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000031:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000031:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x148d8665f4e4]>
+<PSP:r0000031:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x148d88827cf0]>
+<PSP:r0000031:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000031:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x148d87edfd85]>
+<PSP:r0000031:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000035:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000035:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x150b34d604e4]>
+<PSP:r0000035:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x150b36f28cf0]>
+<PSP:r0000035:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000035:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x150b365e0d85]>
+<PSP:r0000035:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000018:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000018:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14d5047e84e4]>
+<PSP:r0000018:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14d5069b0cf0]>
+<PSP:r0000018:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000018:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14d506068d85]>
+<PSP:r0000018:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000061:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000061:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x15182b8d24e4]>
+<PSP:r0000061:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x15182da9acf0]>
+<PSP:r0000061:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000061:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x15182d152d85]>
+<PSP:r0000061:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000045:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000045:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x154507b334e4]>
+<PSP:r0000045:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x154509cfbcf0]>
+<PSP:r0000045:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000045:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1545093b3d85]>
+<PSP:r0000045:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000020:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000020:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1554a84b24e4]>
+<PSP:r0000020:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1554aa67acf0]>
+<PSP:r0000020:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000020:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1554a9d32d85]>
+<PSP:r0000020:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000049:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000049:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14d4856ae4e4]>
+<PSP:r0000049:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14d487876cf0]>
+<PSP:r0000049:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000049:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14d486f2ed85]>
+<PSP:r0000049:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000043:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000043:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14c8c03924e4]>
+<PSP:r0000043:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14c8c2564cf0]>
+<PSP:r0000043:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000043:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14c8c1c1cd85]>
+<PSP:r0000043:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000030:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000030:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1455517b44e4]>
+<PSP:r0000030:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14555397ccf0]>
+<PSP:r0000030:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000030:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x145553034d85]>
+<PSP:r0000030:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000032:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000032:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1521a663f4e4]>
+<PSP:r0000032:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1521a8811cf0]>
+<PSP:r0000032:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000032:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1521a7ec9d85]>
+<PSP:r0000032:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000060:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000060:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14c67b63a4e4]>
+<PSP:r0000060:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14c67d802cf0]>
+<PSP:r0000060:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000060:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14c67cebad85]>
+<PSP:r0000060:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+[jwb0579:10838:0:10838] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0579:10786:0:10786] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb0579:10884:0:10884] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  10786) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000013:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000013:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1469969544e4]>
+<PSP:r0000013:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x146998b1ccf0]>
+<PSP:r0000013:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000013:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1469981d4d85]>
+<PSP:r0000013:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  10735) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000014:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000014:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14f2293c04e4]>
+<PSP:r0000014:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14f22b592cf0]>
+<PSP:r0000014:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000014:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14f22ac4ad85]>
+<PSP:r0000014:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:  10838) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:  10884) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000012:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000012:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x14eaf79c14e4]>
+<PSP:r0000012:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x14eaf9b89cf0]>
+<PSP:r0000012:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000012:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14eaf9241d85]>
+<PSP:r0000012:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000015:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000015:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x148f4793b4e4]>
+<PSP:r0000015:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x148f49b03cf0]>
+<PSP:r0000015:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000015:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x148f491bbd85]>
+<PSP:r0000015:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+[jwb1098:7045 :0:7045] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1098:7091 :0:7091] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+[jwb1098:6985 :0:6985] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:   7091) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000052:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000052:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x1483fb1cd4e4]>
+<PSP:r0000052:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x1483fd395cf0]>
+<PSP:r0000052:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000052:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x1483fca4dd85]>
+<PSP:r0000052:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:   7045) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000055:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000055:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x146b03da44e4]>
+<PSP:r0000055:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x146b05f6ccf0]>
+<PSP:r0000055:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000055:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x146b05624d85]>
+<PSP:r0000055:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+==== backtrace (tid:   6935) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+==== backtrace (tid:   6985) ====
+ 0 0x0000000000012cf0 __funlockfile()  :0
+ 1 0x00000000004b14a0 main()  ???:0
+ 2 0x000000000003ad85 __libc_start_main()  ???:0
+ 3 0x00000000004b5f8e _start()  ???:0
+=================================
+<PSP:r0000054:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000054:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x150696bbb4e4]>
+<PSP:r0000054:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x150698d83cf0]>
+<PSP:r0000054:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000054:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x15069843bd85]>
+<PSP:r0000054:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+<PSP:r0000053:Backtrace after SIGSEGV (Invalid memory reference):>
+<PSP:r0000053:# 0: /p/software/juwelsbooster/stages/2024/software/pscom/5-default-GCCcore-12.3.0/lib/libpscom.so.2(+0xb4e4) [0x150949aaa4e4]>
+<PSP:r0000053:# 1: /usr/lib64/libpthread.so.0(+0x12cf0) [0x15094bc72cf0]>
+<PSP:r0000053:# 2: ./PenningTrapPinT(main+0x10f0) [0x4b14a0]>
+<PSP:r0000053:# 3: /usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x15094b32ad85]>
+<PSP:r0000053:# 4: ./PenningTrapPinT(_start+0x2e) [0x4b5f8e]>
+srun: error: jwb1099: tasks 56-59: Exited with exit code 1
+srun: error: jwb0477: tasks 4-7: Exited with exit code 1
+srun: error: jwb1096: tasks 48-51: Exited with exit code 1
+srun: error: jwb1090: tasks 44-47: Exited with exit code 1
+srun: error: jwb0608: tasks 40-43: Exited with exit code 1
+srun: error: jwb1147: tasks 60-63: Exited with exit code 1
+srun: error: jwb0580: tasks 16-19: Exited with exit code 1
+srun: error: jwb0479: tasks 8-11: Exited with exit code 1
+srun: error: jwb0606: tasks 36-39: Exited with exit code 1
+srun: error: jwb0605: tasks 32-35: Exited with exit code 1
+srun: error: jwb0587: tasks 20-23: Exited with exit code 1
+srun: error: jwb0579: tasks 12-15: Exited with exit code 1
+srun: error: jwb0604: tasks 28-31: Exited with exit code 1
+srun: error: jwb1098: tasks 52-55: Exited with exit code 1
+srun: error: jwb0600: tasks 24-27: Exited with exit code 1
+srun: error: jwb0059: tasks 0-3: Exited with exit code 1

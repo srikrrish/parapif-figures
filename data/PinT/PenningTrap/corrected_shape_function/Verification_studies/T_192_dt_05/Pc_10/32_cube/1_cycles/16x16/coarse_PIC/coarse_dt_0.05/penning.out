@@ -1,0 +1,106 @@
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '32' is not parsed by Ippl. Make sure your application parses it.
+Option '327680' is not parsed by Ippl. Make sure your application parses it.
+Option '19.2' is not parsed by Ippl. Make sure your application parses it.
+Option '0.05' is not parsed by Ippl. Make sure your application parses it.
+Option '0.05' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-11' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option 'B-spline' is not parsed by Ippl. Make sure your application parses it.
+Option '1' is not parsed by Ippl. Make sure your application parses it.
+Option '16' is not parsed by Ippl. Make sure your application parses it.
+Option '16' is not parsed by Ippl. Make sure your application parses it.
+Option '0.000001' is not parsed by Ippl. Make sure your application parses it.
+Option '1e-12' is not parsed by Ippl. Make sure your application parses it.
+Option 'PIC' is not parsed by Ippl. Make sure your application parses it.
+PenningTrapPinT{255}> Parareal PenningTrapPinT
+PenningTrapPinT{255}> Slice dT: 1.2
+PenningTrapPinT{255}> No. of fine time steps: 24
+PenningTrapPinT{255}> No. of coarse time steps: 24
+PenningTrapPinT{255}> Tolerance: 1e-11 No. of cycles: 1
+PenningTrapPinT{255}> Np= 327680 Fourier modes = ( 32 , 32 , 32 ) Grid points = ( 32 , 32 , 32 )
+PenningTrapPinT{255}> particles created and initial conditions assigned 
+PenningTrapPinT{255}> Finished iteration: 1 in cycle: 1 Rerror: 0.00699125 Perror: 0.0372405
+PenningTrapPinT{255}> Finished iteration: 2 in cycle: 1 Rerror: 0.00141423 Perror: 0.00604763
+PenningTrapPinT{255}> Finished iteration: 3 in cycle: 1 Rerror: 0.000289552 Perror: 0.00108224
+PenningTrapPinT{255}> Finished iteration: 4 in cycle: 1 Rerror: 4.87437e-05 Perror: 0.000206478
+PenningTrapPinT{255}> Finished iteration: 5 in cycle: 1 Rerror: 7.99666e-06 Perror: 4.15509e-05
+PenningTrapPinT{255}> Finished iteration: 6 in cycle: 1 Rerror: 1.14352e-06 Perror: 7.0912e-06
+PenningTrapPinT{255}> Finished iteration: 7 in cycle: 1 Rerror: 2.0893e-07 Perror: 1.81094e-06
+PenningTrapPinT{255}> Finished iteration: 8 in cycle: 1 Rerror: 2.25865e-08 Perror: 1.84624e-07
+PenningTrapPinT{255}> Finished iteration: 9 in cycle: 1 Rerror: 4.48825e-09 Perror: 4.49178e-08
+PenningTrapPinT{255}> Finished iteration: 10 in cycle: 1 Rerror: 3.22374e-10 Perror: 2.82601e-09
+PenningTrapPinT{255}> Finished iteration: 11 in cycle: 1 Rerror: 5.82885e-11 Perror: 6.22633e-10
+PenningTrapPinT{255}> Finished iteration: 12 in cycle: 1 Rerror: 2.71424e-12 Perror: 2.51717e-11
+PenningTrapPinT{255}> Finished iteration: 13 in cycle: 1 Rerror: 4.13222e-13 Perror: 4.91116e-12
+PenningTrapPinT{255}> PenningTrapPinT Parareal: End.
+Timings{0}> ---------------------------------------------
+Timings{0}>      Timing results for 256 ranks:
+Timings{0}> ---------------------------------------------
+Timings{0}> mainTimer........... Wall tot =    4.88766
+Timings{0}> 
+Timings{0}> particlesCreation... Wall max =    2.38853
+Timings{0}>                      Wall avg =    1.34946
+Timings{0}>                      Wall min =   0.252972
+Timings{0}> 
+Timings{0}> timeCommunication... Wall max =    2.36411
+Timings{0}>                      Wall avg =    1.27751
+Timings{0}>                      Wall min =   0.110336
+Timings{0}> 
+Timings{0}> deepCopy............ Wall max = 0.00175966
+Timings{0}>                      Wall avg = 0.00109099
+Timings{0}>                      Wall min = 0.000208193
+Timings{0}> 
+Timings{0}> finePropagator...... Wall max =    1.83727
+Timings{0}>                      Wall avg =    1.03164
+Timings{0}>                      Wall min =   0.169391
+Timings{0}> 
+Timings{0}> coarsePropagator.... Wall max =   0.497766
+Timings{0}>                      Wall avg =   0.333522
+Timings{0}>                      Wall min =   0.137097
+Timings{0}> 
+Timings{0}> dumpData............ Wall max =    0.39761
+Timings{0}>                      Wall avg =   0.093832
+Timings{0}>                      Wall min =  0.0135314
+Timings{0}> 
+Timings{0}> computeErrors....... Wall max = 0.00233228
+Timings{0}>                      Wall avg = 0.00130046
+Timings{0}>                      Wall min = 0.000231386
+Timings{0}> 
+Timings{0}> initializeShapeFunc. Wall max = 0.000139131
+Timings{0}>                      Wall avg = 0.000101117
+Timings{0}>                      Wall min =  7.425e-05
+Timings{0}> 
+Timings{0}> fieldSolvePIC....... Wall max =   0.228716
+Timings{0}>                      Wall avg =   0.143712
+Timings{0}>                      Wall min =   0.034547
+Timings{0}> 
+Timings{0}> ScatterPIC.......... Wall max =  0.0278277
+Timings{0}>                      Wall avg =   0.017845
+Timings{0}>                      Wall min = 0.00429373
+Timings{0}> 
+Timings{0}> scatterAllReducePIC. Wall max =   0.178961
+Timings{0}>                      Wall avg =   0.104803
+Timings{0}>                      Wall min =  0.0379825
+Timings{0}> 
+Timings{0}> GatherPIC........... Wall max =  0.0178242
+Timings{0}>                      Wall avg =  0.0114611
+Timings{0}>                      Wall min = 0.00274779
+Timings{0}> 
+Timings{0}> ScatterPIFNUFFT..... Wall max =   0.631337
+Timings{0}>                      Wall avg =   0.386437
+Timings{0}>                      Wall min =  0.0565429
+Timings{0}> 
+Timings{0}> scatterAllReducePIF. Wall max =   0.458464
+Timings{0}>                      Wall avg =   0.158765
+Timings{0}>                      Wall min =  0.0236276
+Timings{0}> 
+Timings{0}> GatherPIFNUFFT...... Wall max =   0.590651
+Timings{0}>                      Wall avg =   0.362229
+Timings{0}>                      Wall min =  0.0535178
+Timings{0}> 
+Timings{0}> ---------------------------------------------
