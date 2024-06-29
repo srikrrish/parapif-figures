@@ -1,19 +1,19 @@
 clear all;
 addpath('./heatmaps');
-test='LandauDamping';
+test='TSI';
 ng='64';
 pc='10';
 ntime='16';
-%nspace='2';
-%fine_dt='05';
-%coarse_dt=[0.4 0.2 0.1 0.05];
-%coarse_tol = {'0.001';'0.01';'0.1';'PIC'};
-%ncycles = {'1';'1';'1';'1'};
-nspace='4';
-fine_dt='003125';
-coarse_dt=[0.2 0.05 0.0125 0.003125];
-coarse_tol = {'0.00001';'0.0001';'0.001';'PIC'};
+nspace='2';
+fine_dt='05';
+coarse_dt=[0.4 0.2 0.1 0.05];
+coarse_tol = {'0.001';'0.01';'0.1';'PIC'};
 ncycles = {'1';'1';'1';'1'};
+%nspace='4';
+%fine_dt='003125';
+%coarse_dt=[0.2 0.05 0.0125 0.003125];
+%coarse_tol = {'0.00001';'0.0001';'0.001';'PIC'};
+%ncycles = {'1';'1';'1';'1'};
 %%coarse_tol_mod = {'$10^{-5}$';'$10^{-4}$';'$10^{-3}$';'PIC'};
 ncoarse_dt=length(coarse_dt);
 ncoarse_tol = length(coarse_tol);
@@ -70,12 +70,16 @@ for nt=1:ncoarse_dt
         time_parallel_kernels_max(nt,ntol) = time_max(ind_parallel);
     end
 end
-time_step_ratio = coarse_dt./0.003125; 
-%time_step_ratio = coarse_dt./0.05; 
-heatmap(time_parallel_kernels_max,coarse_tol,time_step_ratio,'%0.1f','Colormap','parula','TickAngle',45,'FontSize',28,'TextColor','m','ColorBar',1);
+
+if(strcmp(fine_dt,'003125'))
+    time_step_ratio = coarse_dt./0.003125; 
+else
+    time_step_ratio = coarse_dt./0.05;
+end
+heatmap(time_parallel_kernels_max,coarse_tol,time_step_ratio,'%0.1f','Colormap','autumn','TickAngle',45,'FontSize',28,'TextColor','k','ColorBar',1);
 fig = gca;
 set(gca,'Fontsize',28);
 xlabel('Coarse propagator');
 %ylabel('Coarse time step size');
-%ylabel('$\Delta t_g/\Delta t_f$');
+ylabel('$\Delta t_g/\Delta t_f$');
 exportgraphics(fig,[test,'_speedup_heatmap_dt_',fine_dt,'_Pc_',pc,'_',ng,'_cube.pdf']);
